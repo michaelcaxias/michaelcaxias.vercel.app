@@ -2,7 +2,7 @@
     align-content: center;
 }
 body {
-    background-color:#fcfcfc;
+    background-image: linear-gradient(#FFC1B6, #e48f80);
 }
 
 .photo {
@@ -14,7 +14,7 @@ body {
 }
 
 .whoAmI {
-    background-color: rgb(72, 207, 67);
+    background-image: linear-gradient(#FDFFBC, #FFEEBB);
     border-radius: 2%;
     display: flex;
     align-items: center;
@@ -26,6 +26,7 @@ body {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: #494949;
 }
 
 .description-title {
