@@ -1,0 +1,36 @@
+#foto {
+    align-content: center;
+}
+body {
+    background-color:#fcfcfc;
+}
+
+.photo {
+    align-items: center;
+    width: 400px;
+    border-radius: 30%;
+    padding: 10mm;
+    
+}
+
+.whoAmI {
+    background-color: rgb(72, 207, 67);
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    left: 440px;
+    bottom: 400px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.description-title {
+    font-family: sans-serif;
+    left: 400px;
+    bottom: 450px;
+    font-size: 50px;
+}
