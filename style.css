@@ -85,3 +85,28 @@ h1 {
 .lists-hardskils-c {
     width: 810px;
 }
+
+.github {
+    background-color: #C490E4;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.github:hover, .linkedin:hover {
+    background-image: linear-gradient(rgb(47, 0, 77), #6900aa);
+    color: #ffffff;
+}
+
+.linkedin {
+    background-color: #C490E4;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
