@@ -2,7 +2,10 @@
     align-content: center;
 }
 body {
-    background-image: linear-gradient(#FFC1B6, #e48f80);
+    background-image: linear-gradient(#F6D6AD, #e48f80);
+}
+h1 {
+    text-align: center;
 }
 
 .photo {
@@ -34,4 +37,38 @@ body {
     left: 400px;
     bottom: 450px;
     font-size: 50px;
+}
+
+.hardskills {
+    padding: 30px;
+    font-size: 30px;
+    background-image: repeating-linear-gradient(#F9C0C0, #f59797);
+    border-radius: 3%;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.softskills {
+    padding: 30px;
+    font-size: 30px;
+    background-image: repeating-linear-gradient(#CCF6C8, #b4eeaf);
+    border-radius: 3%;
+    font-family: sans-serif;
+}
+
+.hardskills-title {
+    font-size: 50px;
+    color: rgb(48, 0, 0);
+}
+
+.softskills-title {
+    font-size: 50px;
+    color: rgb(0, 48, 0);
+}
+
+.hardskills-li {
+    color: rgb(61, 0, 0);
+}
+
+.softskills-li {
+    color: rgb(0, 70, 3)
 }
