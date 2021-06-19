@@ -6,6 +6,7 @@ body {
 }
 h1 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .photo {
@@ -24,12 +25,13 @@ h1 {
 }
 
 .description {
-    left: 440px;
-    bottom: 400px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: none;
     color: #494949;
+}
+.bold-text {
+    font-weight: bold;
 }
 
 .description-title {
