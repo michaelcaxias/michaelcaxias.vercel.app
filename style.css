@@ -21,7 +21,7 @@ h1 {
 
 .whoIAm {
     background-image: linear-gradient(45deg,#FDFFBC, #FFEEBB);
-    border-radius: 50px;
+    border-radius: 70px;
     display: flex;
     align-items: center;
 }
@@ -31,6 +31,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: none;
     color: #494949;
+    margin-right: 20px;
 }
 .bold-text {
     font-weight: bold;
@@ -44,30 +45,25 @@ h1 {
 }
 
 
-.hardskills {
+.hardskills, .softskills{
     padding: 30px;
     font-size: 30px;
     background-image: repeating-linear-gradient(#F9C0C0, #f59797);
-    border-radius: 50px;
+    border-radius: 70px;
     font-family: sans-serif;
     margin-bottom: 30px;
     display: flex;
 }
 .softskills {
-    padding: 30px;
-    font-size: 30px;
     background-image: repeating-linear-gradient(#CCF6C8, #b4eeaf);
-    border-radius: 50px;
-    font-family: sans-serif;
 }
 
-.hardskills-title {
+.hardskills-title, .softskills-title {
     font-size: 50px;
     color: rgb(48, 0, 0);
 }
 
 .softskills-title {
-    font-size: 50px;
     color: rgb(0, 48, 0);
 }
 
@@ -79,21 +75,22 @@ h1 {
     color: rgb(0, 70, 3)
 }
 
-.coding-image {
+.image-skills, .image-skills-light {
     width: 350px;
     align-items: center;
     margin-top: 100px;
 }
 
+.image-skills-light {
+    margin-top: auto;
+    margin-left: 100px;
+}
+
 .lists-hardskils-c {
     width: 810px;
 }
-.redessociais {
-    margin-bottom: 10px;
-    position: relative;
-}
 
-.github {
+.redessociais {
     background-color: #C490E4;
     font-family: sans-serif;
     font-weight: bold;
@@ -102,18 +99,11 @@ h1 {
     text-decoration: none;
     border-radius: 10px;
     margin-right: 10px;
+    margin-bottom: 30px;
+    color: rgb(90, 0, 126);
 }
-.github:hover, .linkedin:hover {
+.redessociais:hover {
     background-image: linear-gradient(rgb(47, 0, 77), #6900aa);
     color: #ffffff;
 }
 
-.linkedin {
-    background-color: #C490E4;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-}
