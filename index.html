@@ -1,62 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portifólio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Titulo</title>
 </head>
 <body>
-    <h1><b>Michael E. Henrique Rodrigues Caxias</b></h1>
+    <header id="header">
+        <a id="logo" href="">Michael</a>
 
-<div class="whoIAm">
-    <img class="photo" src="images/avatar.png" alt="hamster fazendo símbolo da paz">
-    <div>
-        <h2 class="description-title">Quem sou eu:</h2>
-        <p class="description" >
-            <em>Sou estudante de Desenvolvimento Web <br>na <span class="bold-text">Trybe</span> <br> moro em Belém do Pará <br>tenho 18 anos e adoro cuidar de fazendinhas virtuais</em></p>
-            <div>
-                <a class="redessociais" target="_blank" href="https://github.com/michaelcaxias/">GitHub</a>
-                <a class="redessociais" target="_blank" href="https://www.linkedin.com/in/michaelcaxias/">Linkedin</a>
-                <a class="redessociais" target="_blank" href="projects/lessons-learned/index.html">Lessons Learned</a>
-            </div>
-        </div>
-</div>
-
-     <h1>Habilidades</h1>
-
-     <div class="hardskills">
-
-         <div class="lists-hardskills-c">
-            <h2 class="hardskills-title"><strong>Hard Skills (em desenvolvimento)</strong></h2>
-            <ul class="hardskills-li">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Git</li>
-                <li>GitHub</li>
-         </div>
-         <div>
-            <img class="image-skills"src="images/coding.png" alt="Homem em um computador">
-        </div>
-     </div>
-
-     <div class="softskills">
-        <div class="list-softskills-c">
-            <h2 class="softskills-title"><strong>Soft Skills:</strong></h2>
-            <ul class="softskills-li">
-                <li>Trabalho em grupo</li>
-                <li>Colaboração</li>
-                <li>Proatividade</li>
-                <li>Inteligência Emocional</li>
+        <nav id="nav-header">
+            <button id="btn-mobile">
+                <span id="hamburguer-menu"></span>
+            </button>
+            <ul id="menu">
+                <li class="menu-li"><a href="">Inicio</a></li>
+                <li class="menu-li"><a href="">Projetos</a></li>
+                <li class="menu-li"><a href="">Tecnologias</a></li>
+                <li class="menu-li"><a href="">Contato</a></li>
             </ul>
-        </div>
-        <div>
-            <img class="image-skills-light"src="images/light.png" alt="Homem em uma lâmpada">
-        </div>
-     </div>
-
+        </nav>
+    </header>
+    <script src="script.js"></script>
 </body>
 </html>
