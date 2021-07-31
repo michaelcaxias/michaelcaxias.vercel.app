@@ -7,10 +7,12 @@ body, ul {
 a {
   color: #D7D7D7;
   text-decoration: none;
+  transition: .5s;
 }
 
 a:hover {
   background-color: #1d1d1d52;
+  color: white;
   border-radius: 10px;
 }
 
@@ -30,6 +32,7 @@ a:hover {
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
+  width: 3rem;
 }
 
 #menu {
