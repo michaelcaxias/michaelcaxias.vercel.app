@@ -10,18 +10,21 @@ a {
 }
 
 a:hover {
-  background-color: #1d1d1d;
+  background-color: #1d1d1d52;
   border-radius: 10px;
 }
 
 #header {
+  position: fixed;
+  width: 100%;
   display: flex;
   box-sizing: border-box;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #303030;
+  background-color: #000000b7;
   height: 48px;
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 #logo {
