@@ -33,7 +33,7 @@ a:hover {
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #283c63d2;
+  background-color: #283c639d;
   height: 48px;
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -62,12 +62,19 @@ a:hover {
 
 #hero {
   margin-top: 48px;
-  background-color: blue;
   border-bottom-left-radius: 80px;
   height: 90vh;
-  background: linear-gradient(40deg, rgb(0, 44, 109), rgba(255, 255, 255, 0)), url(images/trybewarts-hero.png);
+  background-color: #F85F73;
   background-size: cover;
-  border: none;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FBE8D3;
+  background: #283c63;
+  z-index: 300;
 }
 
 @media (max-width: 600px) {
