@@ -4,6 +4,10 @@ body, ul {
   font-family: sans-serif;
 }
 
+body {
+  background-color: #FBE8D3;
+}
+
 a {
   color: #D7D7D7;
   text-decoration: none;
