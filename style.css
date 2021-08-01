@@ -16,15 +16,24 @@ a:hover {
   border-radius: 10px;
 }
 
+#behind {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 48px;
+  background-color: #283c63;
+}
+
 #header {
   position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   box-sizing: border-box;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #000000b7;
+  background-color: #283c63d2;
   height: 48px;
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -49,6 +58,16 @@ a:hover {
 
 #btn-mobile {
   display: none;
+}
+
+#hero {
+  margin-top: 48px;
+  background-color: blue;
+  border-bottom-left-radius: 80px;
+  height: 90vh;
+  background: linear-gradient(40deg, rgb(0, 44, 109), rgba(255, 255, 255, 0)), url(images/trybewarts-hero.png);
+  background-size: cover;
+  border: none;
 }
 
 @media (max-width: 600px) {
