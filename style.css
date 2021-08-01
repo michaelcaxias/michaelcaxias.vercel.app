@@ -28,7 +28,7 @@ a:hover {
   background-color: #283c63;
 }
 
-#header {
+#header-menu {
   position: fixed;
   top: 0;
   width: 100%;
@@ -76,15 +76,33 @@ a:hover {
   display: flex;
   margin-top: 1rem;
   background-color: #283c63;
-  height: 90vh;
+  padding: 5%;
+  height: 50%;
+}
+
+#about {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about-text {
+  color: white;
+  text-align: center;
+  width: 50%;
+  font-size: x-large;
+}
+
+#perfil-image {
+  width: 40%;
+  border-radius: 2rem;
 }
 
 #technologies {
-  height: 50vh;
+  height: 30%;
 }
 
 #contact {
-  height: 40vh;
+  height: 90%;
 }
 
 #footer {
@@ -96,7 +114,27 @@ a:hover {
   z-index: 300;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+
+  #about {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  #about-text {
+    color: white;
+    width: 100%;
+    font-size: large;
+  }
+  
+  #perfil-image {
+    width: 60%;
+    border-radius: 2rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
 
   #menu {
     display: flex;
@@ -122,7 +160,7 @@ a:hover {
     opacity: 100%;
   }
 
-  #header.active {
+  #header-menu.active {
     transition: .5s;
     background-color: #000000;
   }

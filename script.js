@@ -5,9 +5,9 @@ const toggleMenu = (event) => {
     event.preventDefault()
   }
   const navHeader = document.querySelector('#nav-header');
-  const header = document.querySelector('#header');
+  const headerMenu = document.querySelector('#header-menu');
   navHeader.classList.toggle('active');
-  header.classList.toggle('active')
+  headerMenu.classList.toggle('active')
 } 
 
 
