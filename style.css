@@ -41,6 +41,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
   display: flex;
   box-sizing: border-box;
   padding: 1rem;
@@ -115,11 +116,15 @@ h1 {
 
 /* -----PROJETOS----- */
 
-#title-description {
+#projects {
+  align-items: center;
+}
+
+#projects-container {
   font-size: x-large;
   color: white;
   width: 55%;
-  padding: 5%;
+  text-align: center;
 }
 
 #project-details {
@@ -127,11 +132,6 @@ h1 {
   text-align: center;
   flex-direction: column;
   align-items: center;
-}
-
-#project-image {
-  position: absolute;
-  right: 2%;
 }
 
 #project-select-buttons {
@@ -176,6 +176,15 @@ h1 {
 #project-button:hover {
   padding: 3.5% 6%;
   font-size: 15px;
+}
+
+#project-image-desktop {
+  width: 55%;
+  height: 50%;
+}
+
+#project-image-mobile {
+  display: none;
 }
 
 /* -----TECNOLOGIAS----- */
@@ -293,5 +302,24 @@ h1 {
   #nav-header.active #hamburguer-menu::after {
     transform: rotate(-135deg);
     margin-top: -2px;
+  }
+
+  #projects {
+    padding: 10%;
+  }
+
+  #projects-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  #project-image-mobile {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #project-image-desktop {
+    display: none;
   }
 }
