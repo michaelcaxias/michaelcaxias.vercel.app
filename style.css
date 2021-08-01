@@ -68,12 +68,27 @@ a:hover {
   background-size: cover;
 }
 
+#about, #projects, #technologies, #contact {
+  display: flex;
+  margin-top: 1rem;
+  background-color: #283c63;
+  height: 90vh;
+}
+
+#technologies {
+  height: 50vh;
+}
+
+#contact {
+  height: 40vh;
+}
+
 #footer {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FBE8D3;
-  background: #283c63;
+  background: #1a2844;
   z-index: 300;
 }
 
