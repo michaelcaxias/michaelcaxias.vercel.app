@@ -1,3 +1,5 @@
+/* -----CONFIGS INICIAIS----- */
+
 body, ul {
   margin: 0;
   padding: 0;
@@ -24,6 +26,8 @@ h1 {
   color: #F85F73;
   font-size: xx-large;
 }
+
+/* -----BARRA DE NAVEGAÇÃO NO TOPO----- */
 
 #behind {
   position: absolute;
@@ -69,6 +73,8 @@ h1 {
   display: none;
 }
 
+/* -----HERO----- */
+
 #hero {
   margin-top: 48px;
   border-bottom-left-radius: 80px;
@@ -77,6 +83,8 @@ h1 {
   background-size: cover;
 }
 
+/* -----SEÇÕES----- */
+
 #about, #projects, #technologies, #contact {
   display: flex;
   margin-top: 1rem;
@@ -84,6 +92,8 @@ h1 {
   padding: 5%;
   height: 50%;
 }
+
+/* -----SOBRE----- */
 
 #about {
   justify-content: space-evenly;
@@ -102,6 +112,8 @@ h1 {
   border-radius: 2rem;
   border: 10px solid #F85F73;
 }
+
+/* -----PROJETOS----- */
 
 #title-description {
   font-size: x-large;
@@ -166,13 +178,19 @@ h1 {
   font-size: 15px;
 }
 
+/* -----TECNOLOGIAS----- */
+
 #technologies {
   height: 30%;
 }
 
+/* -----CONTATO----- */
+
 #contact {
   height: 90%;
 }
+
+/* -----RODAPÉ----- */
 
 #footer {
   display: flex;
@@ -182,6 +200,8 @@ h1 {
   background: #1a2844;
   z-index: 300;
 }
+
+/* -----TELAS GRANDES----- */
 
 @media screen and (max-width: 1024px) {
 
@@ -202,6 +222,8 @@ h1 {
   }
   
 }
+
+/* -----CELULARES----- */
 
 @media screen and (max-width: 600px) {
 
