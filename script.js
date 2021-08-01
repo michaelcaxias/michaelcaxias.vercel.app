@@ -1,6 +1,11 @@
 const buttonMenu = document.querySelector('#btn-mobile');
 const backButton = document.querySelector('#back-button');
 const nextButton = document.querySelector('#next-button');
+const projectIndex = document.querySelector('#project-index')
+const projectName = document.querySelector('#project-name');
+const projectDescription = document.querySelector('#project-description');
+const projectImage = document.querySelectorAll('.project-image')
+const projectLink = document.querySelector('#project-link');
 let index = 1;
 
 const toggleMenu = (event) => {
@@ -19,31 +24,33 @@ buttonMenu.addEventListener('touchstart', toggleMenu);
 const projectsArray = [
   {
     title: 'TrybeWarts',
-    description: 'Apenas um teste TrybeWarts',
+    description: 'Projeto de formulário com o tema Harry Potter utilizando JavaScript, HTML e CSS',
+    image: 'images/laptop-trybewarts.png',
     button: 'https://michaelcaxias.github.io/projects/trybewarts/',
   },
 
   {
     title: 'Lista de Tarefas',
     description: 'Apenas um teste Lista de Taregas',
-    button: 'https://michaelcaxias.github.io/projects/todo-list/',
+    image: 'images/laptop-todolist.png',
+    link: 'https://michaelcaxias.github.io/projects/todo-list/',
   }
 ];
 
 const nextAndBack = (index) => {
-  const projectIndex = document.querySelector('#project-index')
-  const projectName = document.querySelector('#project-name');
-  const projectDescription = document.querySelector('#project-description');
-  const projectLink = document.querySelector('#project-link');
-  projectIndex.innerHTML = `${index}/5`
-  projectName.innerText = '';
-  projectDescription.innerText = '';
-  projectLink.setAttribute('href', 'https://michaelcaxias.github.io/projects/trybewarts/')
+  projectIndex.innerHTML = `${index}/${projectsArray.length}`
+  projectName.innerText = `${projectsArray[index -1].title}`;
+  projectDescription.innerText = `${projectsArray[index -1].description}`;
+  projectImage[0].setAttribute('src', `${projectsArray[index -1].image}`)
+  projectImage[1].setAttribute('src', `${projectsArray[index -1].image}`)
+  projectLink.setAttribute('href', `${projectsArray[index -1].link}`)
 }
+
+nextAndBack(index);
 
 backButton.addEventListener('click', () => {
   if (index === 1) {
-    index = 5;
+    index = projectsArray.length;
   }
   else {
     index -= 1;
@@ -52,7 +59,7 @@ backButton.addEventListener('click', () => {
 })
 
 nextButton.addEventListener('click', () => {
-  if (index === 5) {
+  if (index === projectsArray.length) {
     index = 1;
   }
   else {
