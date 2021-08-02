@@ -11,12 +11,17 @@ body {
 }
 
 a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-links {
   color: #D7D7D7;
   text-decoration: none;
   transition: .5s;
 }
 
-a:hover {
+.header-links:hover {
   background-color: #1d1d1d52;
   color: white;
   border-radius: 10px;
