@@ -31,7 +31,7 @@ const projectsArray = [
 
   {
     title: 'Lista de Tarefas',
-    description: 'Apenas um teste Lista de Taregas',
+    description: 'Projeto Lista de Tarefas feito com JavaScript, HTML e CSS',
     image: 'images/laptop-todolist.png',
     link: 'https://michaelcaxias.github.io/projects/todo-list/',
   }
