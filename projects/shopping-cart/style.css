@@ -62,9 +62,15 @@ body {
   flex-direction: column;
   height: auto;
   margin: 5px;
+  gap: 1em;
   width: 200px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.178);
   transition: 0.5s;
+}
+
+.item__price {
+  text-align: center;
+  font-weight: 900;
 }
 
 .item:hover {
@@ -119,6 +125,10 @@ body {
   padding: 1rem;
   transition: 0.5s;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.178);
+}
+
+.removed {
+  background-color: red;
 }
 
 .cart__item:hover {

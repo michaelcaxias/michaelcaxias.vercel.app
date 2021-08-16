@@ -26,7 +26,7 @@ function sumPrices(salePrice) {
 }
 
 function decreasePrices(event) {
-  const getStringPrice = event.target.innerHTML.split('PRICE: $')[1];
+  const getStringPrice = event.target.innerHTML.split('$')[1];
   const getNumberPrice = Number(getStringPrice);
   price -= getNumberPrice;
   const roundNumber = Math.round(price * 100) / 100;
@@ -47,13 +47,14 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
-function createProductItemElement({ sku, name, image }) {
+function createProductItemElement({ sku, name, image, price }) {
   const section = document.createElement('section');
   section.className = 'item';
 
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
+  section.appendChild(createCustomElement('span', 'item__price', `R$ ${price}`));
   section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
 
   return section;
@@ -72,7 +73,7 @@ cartItems.addEventListener('click', cartItemClickListener);
 function createCartItemElement({ sku, name, salePrice }) {
   const li = document.createElement('li');
   li.className = 'cart__item';
-  li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
+  li.innerText = `SKU: ${sku} | NOME: ${name} | PREÇO: R$${salePrice}`;
   sumPrices(salePrice);
   return cartItems.appendChild(li);
 }
@@ -82,6 +83,7 @@ function getInfosApi(object) {
      sku: element.id,
      name: element.title,
      image: element.thumbnail,
+     price: element.price,
     }));
   return infos.forEach((product) => {
     sectionItems.appendChild(createProductItemElement(product));
@@ -132,7 +134,7 @@ async function fetchApi(url) {
   const data = json.results;
   getInfosApi(data);
   clickButtonCart();
-  loading.parentNode.removeChild(loading);
+  loading.remove();
 }
 
 fetchApi(urlFetch);
