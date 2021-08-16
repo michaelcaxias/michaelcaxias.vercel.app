@@ -26,9 +26,8 @@ const projectsArray = [
     title: 'TrybeWarts',
     description: 'Projeto de formulário com o tema Harry Potter utilizando JavaScript, HTML e CSS',
     image: 'images/laptop-trybewarts.png',
-    button: 'https://michaelcaxias.github.io/projects/trybewarts/',
+    link: 'https://michaelcaxias.github.io/projects/trybewarts/',
   },
-
   {
     title: 'Lista de Tarefas',
     description: 'Projeto Lista de Tarefas feito com JavaScript, HTML e CSS',
