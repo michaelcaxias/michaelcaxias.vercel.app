@@ -130,6 +130,11 @@ body {
   background-color: rgb(209, 209, 209);
 }
 
+.cart__items {
+  overflow-y: scroll;
+  height: 55vh;
+}
+
 .cart__item {
   cursor: pointer;
   background-color: white;
@@ -217,5 +222,10 @@ body {
     color: rgb(43, 105, 197);
     border-radius: 50%;
     padding: 5%;
+  }
+  
+  .mobile-cart:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 208, 68);
   }
 }
