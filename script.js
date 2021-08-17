@@ -33,6 +33,12 @@ const projectsArray = [
     description: 'Projeto Lista de Tarefas feito com JavaScript, HTML e CSS',
     image: 'images/laptop-todolist.png',
     link: 'https://michaelcaxias.github.io/projects/todo-list/',
+  },
+  {
+    title: 'Carrinho de Compras',
+    description: 'Projeto Carrinho de Compras utilizando a API do Mercado Livre e JavaScript Assíncrono',
+    image: 'images/laptop-todolist.png',
+    link: 'https://michaelcaxias.github.io/projects/shopping-cart/',
   }
 ];
 
