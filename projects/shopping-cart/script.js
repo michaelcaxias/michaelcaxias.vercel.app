@@ -1,10 +1,12 @@
 const cartItems = document.querySelector('.cart__items');
+const cartSection = document.querySelector('.cart-section')
 const loading = document.querySelector('.loading');
 const sectionItems = document.querySelector('.items');
 const searchButton = document.querySelector('.search-button');
 const inputButton = document.querySelector('.input');
 const items = document.querySelector('.items');
 const totalPrice = document.querySelector('.total-price');
+const mobileCart = document.querySelector('.mobile-cart')
 let price = 0;
 
 function saveCart() {
@@ -143,6 +145,10 @@ searchButton.addEventListener('click', () => {
   items.innerHTML = '';
   fetchApi(`https://api.mercadolibre.com/sites/MLB/search?q=${inputButton.value}`);
 });
+
+mobileCart.addEventListener('click', (event) => {
+  cartSection.classList.toggle('active')
+})
 
 window.onload = () => { 
   getSavedCart();

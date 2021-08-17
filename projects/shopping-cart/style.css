@@ -19,6 +19,14 @@ body {
   width: 10rem;
 }
 
+.logo-mobile {
+  display: none;
+}
+
+.inferior-nav {
+  display: none;
+}
+
 .input {
   padding: 0.5rem;
   border: unset;
@@ -132,10 +140,6 @@ body {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.178);
 }
 
-.removed {
-  background-color: red;
-}
-
 .cart__item:hover {
   padding: 1.2rem;
   font-weight: 900;
@@ -155,4 +159,63 @@ body {
 .price {
   font-weight: 900;
   text-align: center;
+}
+
+@media (max-width: 600px){
+
+  .header {
+    height: 2rem;
+    justify-content: space-around;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    height: 100%;
+    width: 15%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .cart-section {
+    visibility: hidden;
+    opacity: 0%;
+    position: fixed;
+    z-index: 10;
+    width: 0;
+    top: 0;
+    height: 0;
+    transition: 0.5s;
+  }
+
+  .active {
+    visibility: visible;
+    opacity: 100%;
+    width: 100%;
+    height: 300vh;
+  }
+
+  .inferior-nav {
+    display: block;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(255, 241, 89);
+    bottom: 0;
+  }
+
+  .mobile-cart {
+    position: absolute;
+    margin: 0 35%;
+    bottom: 0;
+    background-color: rgb(255, 244, 117);
+    color: rgb(43, 105, 197);
+    border-radius: 50%;
+    padding: 5%;
+  }
 }
