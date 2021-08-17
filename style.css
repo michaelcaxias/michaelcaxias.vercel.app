@@ -195,7 +195,28 @@ h1 {
 /* -----TECNOLOGIAS----- */
 
 #technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 30%;
+  color: #F85F73;
+}
+
+.tech-languages {
+  display: flex;
+  padding: 50px;
+  gap: 5rem;
+}
+
+.tech-language {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 100px;
+}
+
+.tech-text {
+  font-size: 25px;
 }
 
 /* -----CONTATO----- */
@@ -327,4 +348,10 @@ h1 {
   #project-image-desktop {
     display: none;
   }
+
+  .tech-languages { 
+    flex-direction: column;
+    gap: 2rem;
+  }
+
 }
