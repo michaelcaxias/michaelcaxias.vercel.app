@@ -99,7 +99,12 @@ body {
   border: 0;
   cursor: pointer;
   margin: 0;
+  transition: 0.5s;
   padding: 0.5rem;
+}
+
+.item__add:hover, .empty-cart:hover {
+  background-color: rgb(43, 105, 197);
 }
 
 .cart-section {
