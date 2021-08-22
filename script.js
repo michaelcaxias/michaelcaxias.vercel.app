@@ -37,7 +37,7 @@ const projectsArray = [
   {
     title: 'Carrinho de Compras',
     description: 'Projeto Carrinho de Compras utilizando a API do Mercado Livre e JavaScript Assíncrono',
-    image: 'images/laptop-todolist.png',
+    image: 'images/shopping-cart-project.png',
     link: 'https://michaelcaxias.github.io/projects/shopping-cart/',
   }
 ];

@@ -169,7 +169,7 @@ h1 {
 
 #project-button {
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 3% 5%;
   background-color: #F85F73;
   color: white;
@@ -179,7 +179,7 @@ h1 {
 }
 
 #project-button:hover {
-  padding: 3.5% 6%;
+  /* padding: 3.5% 6%; */
   font-size: 15px;
 }
 
