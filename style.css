@@ -232,6 +232,20 @@ h1 {
   height: 90%;
 }
 
+#forms {
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 25px;
+  padding: 3%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#form-title {
+  color: #F85F73;
+}
+
 /* -----RODAPÉ----- */
 
 #footer {
