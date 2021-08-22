@@ -167,7 +167,7 @@ body {
 }
 
 @media (max-width: 600px){
-
+ 
   .header {
     height: 2rem;
     justify-content: space-around;
