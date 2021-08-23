@@ -72,3 +72,5 @@ nextButton.addEventListener('click', () => {
   }
   nextAndBack(index);
 })
+
+AOS.init();
