@@ -7,6 +7,7 @@ const toggleSearchButton = document.querySelector('.toggle-search');
 const cancelToggleSearch = document.querySelector('.cancel-toggle-search');
 const carouselInner = document.querySelector('.carousel-inner');
 const logo = document.querySelector('.logo');
+const logoMobile = document.querySelector('.logo-mobile');
 
 const carouselContent = [
   {
@@ -58,6 +59,7 @@ const toggleSearch = () => {
 const refreshPage = () => window.location.reload();
 
 logo.addEventListener('click', refreshPage);
+logoMobile.addEventListener('click', refreshPage);
 toggleSearchButton.addEventListener('click', toggleSearch);
 cancelToggleSearch.addEventListener('click', toggleSearch);
 buttonMenu.addEventListener('click', toggleMenu);
