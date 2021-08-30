@@ -98,7 +98,7 @@ body {
 }
 
 .input-group>.form-control, .input-group>.form-select {
-  width: 70%;
+  width: 350px;
 }
 
 .button-search {
@@ -402,54 +402,6 @@ body {
   flex-grow: 1;
 }
 
-
-@media screen and (max-width: 800px) {
-
-  .content-left {
-    width: 100%;
-  }
-
-  .main-content {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .news {
-    width: 100%;
-  }
-
-  .news-content {
-    flex-direction: column;
-  }
-
-  .input-group>.form-control, .input-group>.form-select {
-    width: 25%;
-  }
-
-  .sign-up-desktop {
-    display: none;
-  }
-
-  .header {
-    height: 60px;
-    padding: 0;
-  }
-
-  .aside-menu {
-    height: calc(100vh - 8%);
-    top: 60px;
-  }
-  
-  .header-container.active .aside-menu {
-    visibility: visible;
-    width: 100%;
-  }
-
-  .search-container {
-    padding: 30px;
-  }
-}
-
 /* TELA DE LOGIN  */
 .form-sign-in {
   width: 100%;
@@ -539,6 +491,53 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+
+  .content-left {
+    width: 100%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .news-content {
+    flex-direction: column;
+  }
+
+  .input-group>.form-control, .input-group>.form-select {
+    width: 25%;
+  }
+
+  .sign-up-desktop {
+    display: none;
+  }
+
+  .header {
+    height: 60px;
+    padding: 0;
+  }
+
+  .aside-menu {
+    height: calc(100vh - 8%);
+    top: 60px;
+  }
+  
+  .header-container.active .aside-menu {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .search-container {
+    padding: 30px;
+  }
+}
+
 @media screen and (max-width: 600px) {
 
   .cancel-toggle-search {
@@ -570,6 +569,10 @@ body {
   .search-container {
     display: none;
     padding: 0;
+  }
+
+  .input-group>.form-control, .input-group>.form-select {
+    width: 40vw;
   }
 
   .search-show .search-container{
