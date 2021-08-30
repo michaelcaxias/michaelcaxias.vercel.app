@@ -10,17 +10,17 @@ const logo = document.querySelector('.logo');
 
 const carouselContent = [
   {
-    img: '../images/naruto-shippuden.jpg',
+    img: './images/naruto-shippuden.jpg',
     title: 'Naruto Shippuden',
     description: 'Dia 5 de setembro estreia temporada 17',
   },
   {
-    img: '../images/shingeki.jpg',
+    img: './images/shingeki.jpg',
     title: 'Attack On Titan',
     description: 'Dia 3 de Janeiro de 2022',
   },
   {
-    img: '../images/one-piece-wall.jpg',
+    img: './images/one-piece-wall.jpg',
     title: 'One Piece',
     description: 'Temporada 546 chega dia 7 de março!',
   },
