@@ -1,12 +1,12 @@
 const cartItems = document.querySelector('.cart__items');
-const cartSection = document.querySelector('.cart-section')
+const cartSection = document.querySelector('.cart-section');
 const loading = document.querySelector('.loading');
 const sectionItems = document.querySelector('.items');
 const searchButton = document.querySelector('.search-button');
 const inputText = document.querySelector('.input');
 const items = document.querySelector('.items');
 const totalPrice = document.querySelector('.total-price');
-const mobileCart = document.querySelector('.mobile-cart')
+const mobileCart = document.querySelector('.mobile-cart');
 let price = 0;
 
 function saveCart() {
