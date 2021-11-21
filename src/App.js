@@ -1,10 +1,16 @@
 import React from 'react';
+import GlobalStyle from './styles/globalStyle';
+import { ButtonPrimary, ButtonSecondary } from './styles/index';
 
 function App() {
   return (
-    <section>
+    <>
+      <GlobalStyle />
       <h1>Apenas iniciando</h1>
-    </section>
+      <ButtonPrimary>Projetos</ButtonPrimary>
+      <ButtonSecondary>Linkedin</ButtonSecondary>
+      <ButtonSecondary>CV</ButtonSecondary>
+    </>
   );
 }
 
