@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyle from './styles/globalStyle';
+import GlobalStyle from './styles/global';
 import About from './sections/About/index';
 import Contact from './sections/Contact/index';
 import Projects from './sections/Projects/index';

@@ -1,9 +1,12 @@
 import React from 'react';
+import AboutStyle from './styles/about';
+import Header from './components/Header';
 
 export default function About() {
   return (
-    <section>
+    <AboutStyle>
+      <Header />
       About
-    </section>
+    </AboutStyle>
   );
 }
