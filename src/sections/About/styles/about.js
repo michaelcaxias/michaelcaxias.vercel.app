@@ -11,10 +11,10 @@ const AboutStyle = styled.section`
       align-items: center;
       display: flex;
       justify-content: center;
-      padding: 1.5rem;
+      padding: 1.5rem 4rem;
       gap: 1.5rem;
-      border: 1px solid black;
       font-size: 1.2rem;
+      font-weight: 500;
       a {
         text-decoration: none;
         color: black;

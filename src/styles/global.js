@@ -10,6 +10,6 @@ export default createGlobalStyle`
   }
   
   body {
-    font-family: 'Heebo';
+    font-family: 'Heebo', 'sans-serif';
   }
 `;

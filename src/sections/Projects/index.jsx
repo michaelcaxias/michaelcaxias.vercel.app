@@ -1,9 +1,10 @@
 import React from 'react';
+import ProjectsStyle from './styles/projects';
 
 export default function Projects() {
   return (
-    <section>
+    <ProjectsStyle>
       Projects
-    </section>
+    </ProjectsStyle>
   );
 }
