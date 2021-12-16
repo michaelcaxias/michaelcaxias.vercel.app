@@ -1,20 +1,18 @@
 import React from 'react';
 import GlobalStyle from './styles/globalStyle';
-import About from './sections/About';
-import Contact from './sections/Contact';
-import Projects from './sections/Projects';
-import Technologies from './sections/Technologies';
+import About from './sections/About/index';
+import Contact from './sections/Contact/index';
+import Projects from './sections/Projects/index';
+import Technologies from './sections/Technologies/index';
 
-function App() {
+export default function App() {
   return (
     <>
       <GlobalStyle />
       <About />
-      <Contact />
       <Projects />
       <Technologies />
+      <Contact />
     </>
   );
 }
-
-export default App;
