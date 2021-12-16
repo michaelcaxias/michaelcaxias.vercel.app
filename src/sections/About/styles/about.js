@@ -4,6 +4,7 @@ const AboutStyle = styled.section`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #ffff;
   header {
     display: flex;
     justify-content: flex-end;    
