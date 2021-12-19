@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
 
-import { IoDocumentTextOutline } from 'react-icons/io5';
+import { FiDownload } from 'react-icons/fi';
 
 import AboutStyle from './styles/about';
 import Header from './components/Header';
@@ -40,9 +40,9 @@ export default function About() {
                   LinkedIn
                 </ButtonSecondary>
               </a>
-              <ButtonSecondary>
+              <ButtonSecondary className="curriculum-button">
                 CV
-                <IoDocumentTextOutline />
+                <FiDownload />
               </ButtonSecondary>
             </section>
           </section>

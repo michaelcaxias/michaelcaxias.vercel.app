@@ -44,7 +44,7 @@ const AboutStyle = styled.section`
     font-size: 1rem;
   }
   .hero-section {
-    height: calc(95vh - 80px);
+    height: calc(95vh - 79px);
     background-color: #ffff;
     flex-direction: column;
     display: flex;
@@ -54,6 +54,11 @@ const AboutStyle = styled.section`
   .buttons-group {
     display: flex;
     gap: 0.9rem;
+  }
+  .curriculum-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   .about {
     display: flex;
