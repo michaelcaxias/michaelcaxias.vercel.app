@@ -10,35 +10,40 @@ export default function About() {
   return (
     <AboutStyle>
       <Header />
-      <section>
-        Image
-        <section>
-          <h1>
-            Olá, eu sou Michael,
-            Desenvolvedor Web
-          </h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
-            consequat sunt nostrud amet.
-          </p>
-          <section>
-            <ButtonPrimary>
-              Projetos
-            </ButtonPrimary>
-            <a
-              href="https://br.linkedin.com/in/michaelcaxias"
-              target="_blank"
-              rel="noreferrer"
-            >
+      <section className="hero-section">
+        <section className="about">
+          <section className="about-section">
+            <h1>
+              Olá, eu sou Michael,
+              <br />
+              Desenvolvedor Web
+            </h1>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              <br />
+              sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+              <br />
+              consequat sunt nostrud amet.
+            </p>
+            <section className="buttons-group">
+              <ButtonPrimary>
+                Projetos
+              </ButtonPrimary>
+              <a
+                href="https://br.linkedin.com/in/michaelcaxias"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ButtonSecondary>
+                  LinkedIn
+                </ButtonSecondary>
+              </a>
               <ButtonSecondary>
-                LinkedIn
+                CV
               </ButtonSecondary>
-            </a>
-            <ButtonSecondary>
-              CV
-            </ButtonSecondary>
+            </section>
           </section>
+          <section className="circle-picture" />
         </section>
       </section>
     </AboutStyle>
