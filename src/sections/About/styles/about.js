@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import styled from 'styled-components';
 
 const AboutStyle = styled.section`
@@ -5,7 +6,7 @@ const AboutStyle = styled.section`
   flex-direction: column;
   header {
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end;  
     nav {
       align-items: center;
       display: flex;
@@ -17,6 +18,19 @@ const AboutStyle = styled.section`
       a {
         text-decoration: none;
         color: black;
+        transition: 0.3s;
+        &:hover {
+          color: #FF8DA4;
+        }
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.8rem;
+        padding: 0;
+        transition: 0.3s;
         &:hover {
           color: #FF8DA4;
         }

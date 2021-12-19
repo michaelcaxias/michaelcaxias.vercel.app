@@ -4,8 +4,10 @@ import { MdWbSunny } from 'react-icons/md';
 export default function Header() {
   return (
     <header>
-      <nav>
-        <MdWbSunny />
+      <nav id="menu">
+        <button type="button">
+          <MdWbSunny />
+        </button>
         <a href="#about">Sobre</a>
         <a href="#projects">Projetos</a>
         <a href="#technologies">Tecnologias</a>
