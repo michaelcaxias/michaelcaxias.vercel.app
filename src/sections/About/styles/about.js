@@ -10,9 +10,9 @@ const AboutStyle = styled.section`
       align-items: center;
       display: flex;
       justify-content: center;
-      padding: 1.5rem 4rem;
+      padding: 1.5rem 4.5rem;
       gap: 1.5rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 500;
       a {
         text-decoration: none;
@@ -30,7 +30,7 @@ const AboutStyle = styled.section`
     font-size: 1rem;
   }
   .hero-section {
-    height: calc(95vh - 76px);
+    height: calc(95vh - 80px);
     background-color: #ffff;
     flex-direction: column;
     display: flex;
@@ -39,11 +39,11 @@ const AboutStyle = styled.section`
   }
   .buttons-group {
     display: flex;
-    gap: 0.8rem;
+    gap: 0.9rem;
   }
   .about {
     display: flex;
-    gap: 6rem;
+    gap: 9rem;
   }
   .about-section {
     display: flex;

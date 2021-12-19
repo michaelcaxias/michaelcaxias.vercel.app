@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
 
+import { IoDocumentTextOutline } from 'react-icons/io5';
+
 import AboutStyle from './styles/about';
 import Header from './components/Header';
 
@@ -40,6 +42,7 @@ export default function About() {
               </a>
               <ButtonSecondary>
                 CV
+                <IoDocumentTextOutline />
               </ButtonSecondary>
             </section>
           </section>
