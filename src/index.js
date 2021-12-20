@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './fonts.css';
 
+import { MyProvider } from './context/MyProvider';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MyProvider>
+      <App />
+    </MyProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

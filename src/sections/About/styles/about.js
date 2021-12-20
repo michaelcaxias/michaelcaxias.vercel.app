@@ -45,7 +45,7 @@ const AboutStyle = styled.section`
   }
   .hero-section {
     height: calc(95vh - 79px);
-    background-color: #ffff;
+    background-color: ${(props) => props.theme.color.background};
     flex-direction: column;
     display: flex;
     align-items: center;
