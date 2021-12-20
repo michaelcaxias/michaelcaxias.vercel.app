@@ -12,4 +12,17 @@ export default createGlobalStyle`
   body {
     font-family: 'Heebo', 'sans-serif';
   }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.color.background}; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.color.primary}; 
+    border-radius: 10px;
+  }
 `;
