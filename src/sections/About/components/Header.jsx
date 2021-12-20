@@ -3,11 +3,11 @@ import { MdWbSunny } from 'react-icons/md';
 import { MyContext } from '../../../context/MyProvider';
 
 export default function Header() {
-  const { theme, setTheme } = useContext(MyContext);
+  const { darkMode, setDarkMode } = useContext(MyContext);
 
   const changeTheme = () => {
-    setTheme((previousTheme) => !previousTheme);
-    localStorage.setItem('theme', !theme);
+    setDarkMode((previousTheme) => !previousTheme);
+    localStorage.setItem('darkMode', !darkMode);
   };
 
   return (

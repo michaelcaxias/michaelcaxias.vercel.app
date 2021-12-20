@@ -14,10 +14,10 @@ import Projects from './sections/Projects/index';
 import Technologies from './sections/Technologies/index';
 
 export default function App() {
-  const { theme } = useContext(MyContext);
+  const { darkMode } = useContext(MyContext);
   return (
     <BrowserRouter>
-      <ThemeProvider theme={ theme ? dark : light }>
+      <ThemeProvider theme={ darkMode ? dark : light }>
         <GlobalStyle />
         <About />
         <Projects />

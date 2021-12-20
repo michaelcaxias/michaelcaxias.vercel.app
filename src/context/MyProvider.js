@@ -1,30 +1,27 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const MyContext = createContext();
 
-// eslint-disable-next-line react/function-component-definition
 export function MyProvider({ children }) {
-  const [theme, setTheme] = useState(false);
-
-  function createThemeLocalStorage() {
-    localStorage.setItem('theme', theme);
-  }
-
-  function setOrCreateThemeStorage() {
-    const themeStorage = JSON.parse(localStorage.getItem('theme'));
-    if (!themeStorage) return createThemeLocalStorage();
-    return setTheme(themeStorage);
-  }
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    function setOrCreateThemeStorage() {
+      const darkModeStorage = JSON.parse(localStorage.getItem('darkMode'));
+      if (!darkModeStorage) localStorage.setItem('darkMode', darkMode);
+      return setDarkMode(darkModeStorage);
+    }
     setOrCreateThemeStorage();
-  }, [setOrCreateThemeStorage]);
+  }, [darkMode]);
+
+  const context = {
+    darkMode,
+    setDarkMode,
+  };
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <MyContext.Provider value={ { theme, setTheme, setOrCreateThemeStorage } }>
+    <MyContext.Provider value={ context }>
       { children }
     </MyContext.Provider>
   );
