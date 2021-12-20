@@ -6,7 +6,9 @@ const AboutStyle = styled.section`
   flex-direction: column;
   header {
     display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-end;
+    transition: 0.3s;
+    background-color: ${(props) => props.theme.color.background};
     nav {
       align-items: center;
       display: flex;
@@ -17,7 +19,7 @@ const AboutStyle = styled.section`
       font-weight: 500;
       a {
         text-decoration: none;
-        color: black;
+        color: ${(props) => props.theme.color.text};
         transition: 0.3s;
         &:hover {
           color: #FF8DA4;
@@ -25,6 +27,7 @@ const AboutStyle = styled.section`
       }
       button {
         background-color: transparent;
+        color: ${(props) => props.theme.color.text};
         border: none;
         cursor: pointer;
         display: flex;
@@ -46,6 +49,7 @@ const AboutStyle = styled.section`
   .hero-section {
     height: calc(95vh - 79px);
     background-color: ${(props) => props.theme.color.background};
+    transition: 0.3s;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -67,6 +71,8 @@ const AboutStyle = styled.section`
   .about-section {
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
+    color: ${(props) => props.theme.color.text};
     gap: 1.8rem;
   }
   .circle-picture {

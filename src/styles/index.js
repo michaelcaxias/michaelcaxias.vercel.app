@@ -20,9 +20,10 @@ export const ButtonPrimary = styled.button`
 `;
 
 export const ButtonSecondary = styled.button`
-  background-color: white;
+  background-color: ${(props) => props.theme.color.background};
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid ${(props) => props.theme.color.text};
+  color: ${(props) => props.theme.color.text};
   cursor: pointer;
   padding: 8px 24px 8px 24px;
   font-size: 18px;
