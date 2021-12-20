@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { MdWbSunny } from 'react-icons/md';
+import { IoMdMoon } from 'react-icons/io';
 import { MyContext } from '../../../context/MyProvider';
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
     <header>
       <nav id="menu">
         <button type="button" onClick={ () => changeTheme() }>
-          <MdWbSunny />
+          {darkMode ? <MdWbSunny /> : <IoMdMoon />}
         </button>
         <a href="#about">Sobre</a>
         <a href="#projects">Projetos</a>
