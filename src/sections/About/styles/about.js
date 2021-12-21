@@ -18,11 +18,25 @@ const AboutStyle = styled.section`
       font-size: 1.3rem;
       font-weight: 500;
       a {
-        text-decoration: none;
         color: ${(props) => props.theme.color.text};
-        transition: 0.3s;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        text-decoration: none;
         &:hover {
           color: #FF8DA4;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: #EAFAFF;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -3px;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover::after {
+          width: 100%;
         }
       }
       button {
@@ -33,7 +47,7 @@ const AboutStyle = styled.section`
         display: flex;
         font-size: 1.8rem;
         padding: 0;
-        transition: 0.3s;
+        transition: all 0.2s ease-in-out;
         &:hover {
           color: #FF8DA4;
         }
