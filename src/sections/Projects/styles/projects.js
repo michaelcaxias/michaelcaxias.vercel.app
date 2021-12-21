@@ -40,7 +40,6 @@ const ProjectsStyle = styled.section`
   .card {
     background-color: white;
     border-radius: 8px;
-    cursor: pointer;
     width: 27rem;
     transition: all 0.2s ease-in-out;
     display: flex;
@@ -70,11 +69,17 @@ const ProjectsStyle = styled.section`
       padding: 1.5rem;
       .buttons-group {
         display: flex;
-        gap: 1rem;
+        gap: 0.9rem;
+        align-items: center;
+        button {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+        }
       }
     }
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.005);
     }
   }
 `;

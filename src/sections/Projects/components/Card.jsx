@@ -1,5 +1,10 @@
-import PropTypes from 'prop-types';
+/* eslint-disable react/jsx-max-depth */
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { AiFillGithub } from 'react-icons/ai';
+import { CgWebsite } from 'react-icons/cg';
+
 import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
 
 export default function Card(props) {
@@ -16,10 +21,16 @@ export default function Card(props) {
         <p>{description}</p>
         <section className="buttons-group">
           <a href={ github } target="_blank" rel="noopener noreferrer">
-            <ButtonSecondary>Github</ButtonSecondary>
+            <ButtonSecondary>
+              Github
+              <AiFillGithub />
+            </ButtonSecondary>
           </a>
           <a href={ website } target="_blank" rel="noopener noreferrer">
-            <ButtonPrimary>Website</ButtonPrimary>
+            <ButtonPrimary>
+              Website
+              <CgWebsite />
+            </ButtonPrimary>
           </a>
         </section>
       </section>
