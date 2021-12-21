@@ -1,27 +1,36 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
-import example from '../../../images/example.png';
 
-export default function Card() {
+export default function Card(props) {
+  const { image, title, description, github, website } = props;
   return (
     <section className="card">
       <section
         className="card-heading"
-        style={ { backgroundImage: `url(${example})` } }
+        style={ { backgroundImage: `url(${image})` } }
       >
-        <h2>Titulo do Projeto</h2>
+        <h2>{title}</h2>
       </section>
       <section className="card-description">
-        <p>
-          Amet minim mollit non deserunt ullamco est sit
-          aliqua dolor do amet sint. Velit officia consequat
-          duis enim velit mollit.
-        </p>
+        <p>{description}</p>
         <section className="buttons-group">
-          <ButtonPrimary>Website</ButtonPrimary>
-          <ButtonSecondary>Github</ButtonSecondary>
+          <a href={ github } target="_blank" rel="noopener noreferrer">
+            <ButtonSecondary>Github</ButtonSecondary>
+          </a>
+          <a href={ website } target="_blank" rel="noopener noreferrer">
+            <ButtonPrimary>Website</ButtonPrimary>
+          </a>
         </section>
       </section>
     </section>
   );
 }
+
+Card.propTypes = {
+  description: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
+};

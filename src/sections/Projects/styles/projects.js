@@ -3,12 +3,39 @@ import styled from 'styled-components';
 const ProjectsStyle = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition: 0.3s;
-  height: 100vh;
+  padding: 5rem;
+  gap: 3rem;
   background-color: ${(props) => props.theme.color.secondaryAlternative};
   h1 {
     font-size: 2.5rem;
     color: ${(props) => props.theme.color.text};
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &::after {
+      content: '';
+      display: block;
+      width: 20rem;
+      height: 3px;
+      background-color: ${(props) => props.theme.color.primary};
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 20rem;
+      height: 3px;
+      background-color: ${(props) => props.theme.color.primary};
+    }
+  }
+  .projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
   }
   .card {
     background-color: white;
@@ -21,7 +48,7 @@ const ProjectsStyle = styled.section`
     box-shadow: 5px 5px ${(props) => props.theme.color.primary};
     .card-heading {
       border-radius: 8px 8px 0 0;
-      height: 200px;
+      height: 150px;
       background-size: cover;
       display: flex;
       align-items: flex-end;
