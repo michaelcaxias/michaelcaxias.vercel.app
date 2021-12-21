@@ -34,13 +34,15 @@ const ProjectsStyle = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    width: 70%;
+    gap: 3rem;
+    width: 80%;
   }
   .card {
     background-color: white;
-    width: 25rem;
     border-radius: 8px;
+    cursor: pointer;
+    width: 27rem;
+    transition: all 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
     background-color: ${(props) => props.theme.color.background};
@@ -70,6 +72,9 @@ const ProjectsStyle = styled.section`
         display: flex;
         gap: 1rem;
       }
+    }
+    &:hover {
+      transform: scale(1.01);
     }
   }
 `;
