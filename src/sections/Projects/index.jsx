@@ -1,10 +1,12 @@
 import React from 'react';
 import ProjectsStyle from './styles/projects';
+import Card from './components/Card';
 
 export default function Projects() {
   return (
     <ProjectsStyle>
-      Projects
+      <h1>Projetos</h1>
+      <Card />
     </ProjectsStyle>
   );
 }
