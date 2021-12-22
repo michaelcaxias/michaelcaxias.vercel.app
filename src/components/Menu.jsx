@@ -20,7 +20,8 @@ const Menu = () => {
   };
 
   const copyToClipboard = () => {
-    document.execCommand('copy');
+    const text = window.getSelection().toString();
+    navigator.clipboard.writeText(text);
   };
 
   return show && (
