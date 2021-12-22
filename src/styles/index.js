@@ -37,3 +37,31 @@ export const ButtonSecondary = styled.button`
     rgba(255,141,164, 0.05) 0px 25px;
   }
 `;
+
+export const MenuStyle = styled.ul`
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  list-style: none;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 100;
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+`;
