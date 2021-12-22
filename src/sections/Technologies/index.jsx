@@ -10,7 +10,14 @@ export default function Technologies() {
   return (
     <TechnologiesStyle>
       <h1>Ferramentas e Tecnologias</h1>
-      <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+      <section className="cards-tech">
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+      </section>
     </TechnologiesStyle>
   );
 }

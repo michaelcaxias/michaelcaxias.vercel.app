@@ -29,6 +29,11 @@ const TechnologiesStyle = styled.section`
       background-color: ${(props) => props.theme.color.primary};
     }
   }
+  .cards-tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
   .tech-card {
     align-items: center;
     background-color: ${(props) => props.theme.color.secondaryAlternative};
