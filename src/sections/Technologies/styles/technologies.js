@@ -41,6 +41,7 @@ const TechnologiesStyle = styled.section`
     color: ${(props) => props.theme.color.text};
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 2rem;
     padding: 2rem 2rem;
     transition: 0.3s;
