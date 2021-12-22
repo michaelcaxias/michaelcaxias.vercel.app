@@ -19,6 +19,10 @@ const Menu = () => {
     navigator.clipboard.writeText(window.location.href);
   };
 
+  const copyToClipboard = () => {
+    document.execCommand('copy');
+  };
+
   return show && (
     <MenuStyle style={ { top: anchorPoint.y, left: anchorPoint.x } }>
       <MenuItem
@@ -31,7 +35,11 @@ const Menu = () => {
         onClick={ refreshPage }
         icon={ <HiOutlineRefresh /> }
       />
-      <MenuItem text="Copiar" icon={ <MdContentCopy /> } />
+      <MenuItem
+        text="Copiar"
+        icon={ <MdContentCopy /> }
+        onClick={ copyToClipboard }
+      />
       <MenuItem
         text="Abrir Linkedin"
         icon={ <AiFillLinkedin /> }
