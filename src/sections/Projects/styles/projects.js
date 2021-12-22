@@ -82,11 +82,6 @@ const ProjectsStyle = styled.section`
       transform: scale(1.005);
     }
   }
-  .pink-line {
-    width: 70%;
-    height: 3px;
-    background-color: ${(props) => props.theme.color.primary};
-  }
 `;
 
 export default ProjectsStyle;

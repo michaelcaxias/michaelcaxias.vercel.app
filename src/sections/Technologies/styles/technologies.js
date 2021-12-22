@@ -5,12 +5,29 @@ const TechnologiesStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 100vh;
+  padding: 5rem;
+  gap: 4rem;
   background-color: ${(props) => props.theme.color.background};
   h1 {
     font-size: 2.5rem;
     color: ${(props) => props.theme.color.text};
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &::after {
+      content: '';
+      display: block;
+      width: 20vh;
+      height: 3px;
+      background-color: ${(props) => props.theme.color.primary};
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 20vh;
+      height: 3px;
+      background-color: ${(props) => props.theme.color.primary};
+    }
   }
   .tech-card {
     align-items: center;
