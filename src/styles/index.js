@@ -53,18 +53,22 @@ export const MenuStyle = styled.ul`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   z-index: 100;
   button {
+    align-items: center;
     background-color: transparent;
     border: none;
     color: ${(props) => props.theme.color.text};
+    display: flex;
     text-align: left;
     font-family: 'Heebo', sans-serif;
     font-weight: 500;
+    justify-content: space-between;
     cursor: pointer;
     width: 100%;
     padding: 0.5rem 1rem;
     transition: 0.3s;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: 600;
     }
   }
 `;
