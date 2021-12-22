@@ -5,6 +5,7 @@ export const light = {
     secondary: '#F3FFFF',
     secondaryAlternative: '#EAFAFF',
     text: '#21243D',
+    contextMenu: 'rgb(255,255,255, 0.4)',
   },
 };
 
@@ -15,5 +16,6 @@ export const dark = {
     secondary: '#201925',
     secondaryAlternative: '#201925',
     text: '#fdfdfd',
+    contextMenu: 'rgb(32,25,37, 0.4)',
   },
 };
