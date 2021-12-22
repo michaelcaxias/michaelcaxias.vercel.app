@@ -7,50 +7,19 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineShareAlt } from 'react-icons/ai'
 
 import useContextMenu from '../hooks/useContextMenu';
 import { MenuStyle } from '../styles/index';
+import MenuItem from './MenuItem';
 
 const Menu = () => {
   const { anchorPoint, show } = useContextMenu();
 
   return show && (
     <MenuStyle style={ { top: anchorPoint.y, left: anchorPoint.x } }>
-      <li>
-        <button type="button">
-          Compartilhar
-          <AiOutlineShareAlt />
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          Atualizar
-          <HiOutlineRefresh />
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          Copiar
-          <MdContentCopy />
-        </button>
-      </li>
-      <hr />
-      <li>
-        <button type="button">
-          Sair
-          <BiExit />
-        </button>
-      </li>
-      <hr />
-      <li>
-        <button type="button">
-          Abrir Linkedin
-          <AiFillLinkedin />
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          Abrir GitHub
-          <AiFillGithub />
-        </button>
-      </li>
+      <MenuItem text="Compartilhar" icon={ <AiOutlineShareAlt /> } />
+      <MenuItem text="Atualizar" icon={ <HiOutlineRefresh /> } />
+      <MenuItem text="Copiar" icon={ <MdContentCopy /> } />
+      <MenuItem text="Sair" icon={ <BiExit /> } />
+      <MenuItem text="Abrir Linkedin" icon={ <AiFillLinkedin /> } />
+      <MenuItem text="Abrir GitHub" icon={ <AiFillGithub /> } />
     </MenuStyle>
   );
 };
