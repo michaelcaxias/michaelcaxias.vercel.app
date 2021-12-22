@@ -10,7 +10,7 @@ import { ButtonPrimary, ButtonSecondary } from '../../styles/index';
 
 export default function About() {
   return (
-    <AboutStyle>
+    <AboutStyle id="about">
       <Header />
       <section className="hero-section">
         <section className="about">

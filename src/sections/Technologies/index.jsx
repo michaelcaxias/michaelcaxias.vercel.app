@@ -10,10 +10,14 @@ import TechCard from './components/TechCard';
 
 export default function Technologies() {
   return (
-    <TechnologiesStyle>
+    <TechnologiesStyle id="technologies">
       <h1>Ferramentas e Tecnologias</h1>
       <section className="cards-tech">
-        <TechCard title="React e Redux" iconOne={ <FaReact /> } iconTwo={ <SiRedux /> } />
+        <TechCard
+          title="React e Redux"
+          iconOne={ <FaReact /> }
+          iconTwo={ <SiRedux /> }
+        />
         <TechCard
           title="HTML5 e CSS3"
           iconOne={ <AiFillHtml5 /> }
