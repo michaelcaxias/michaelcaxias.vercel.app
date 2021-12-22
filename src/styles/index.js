@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const ButtonPrimary = styled.button`
   background-color: #FF8DA4;
   border-radius: 8px;
-  border: none;
+  border: 2px solid ${(props) => props.theme.color.primary};
   cursor: pointer;
   padding: 8px 24px 8px 24px;
   font-size: 18px;
