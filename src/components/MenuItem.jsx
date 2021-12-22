@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function MenuItem({ text, icon, link }) {
+export default function MenuItem({ text, icon, link, onClick }) {
   const item = (
     <li>
-      <button type="button">
+      <button type="button" onClick={ onClick }>
         {text}
         {icon}
       </button>
@@ -14,7 +14,7 @@ export default function MenuItem({ text, icon, link }) {
   const itemLink = (
     <li>
       <a href={ link } target="_blank" rel="noopener noreferrer">
-        <button type="button">
+        <button type="button" onClick={ onClick }>
           {text}
           {icon}
         </button>
@@ -22,11 +22,12 @@ export default function MenuItem({ text, icon, link }) {
     </li>
   );
 
-  return link ? item : itemLink;
+  return link ? itemLink : item;
 }
 
 MenuItem.propTypes = {
   icon: PropTypes.node.isRequired,
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
