@@ -5,7 +5,7 @@ export default function TechCard({ title, iconOne, iconTwo }) {
   return (
     <section className="tech-card">
       <h2>{title}</h2>
-      <section>
+      <section className="icons-card">
         {iconOne}
         {iconTwo}
       </section>
