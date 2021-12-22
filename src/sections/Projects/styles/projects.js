@@ -6,7 +6,7 @@ const ProjectsStyle = styled.section`
   align-items: center;
   transition: 0.3s;
   padding: 5rem;
-  gap: 3rem;
+  gap: 4rem;
   background-color: ${(props) => props.theme.color.secondaryAlternative};
   h1 {
     font-size: 2.5rem;
@@ -17,14 +17,14 @@ const ProjectsStyle = styled.section`
     &::after {
       content: '';
       display: block;
-      width: 20rem;
+      width: 50vh;
       height: 3px;
       background-color: ${(props) => props.theme.color.primary};
     }
     &::before {
       content: '';
       display: block;
-      width: 20rem;
+      width: 50vh;
       height: 3px;
       background-color: ${(props) => props.theme.color.primary};
     }
@@ -81,6 +81,11 @@ const ProjectsStyle = styled.section`
     &:hover {
       transform: scale(1.005);
     }
+  }
+  .pink-line {
+    width: 70%;
+    height: 3px;
+    background-color: ${(props) => props.theme.color.primary};
   }
 `;
 

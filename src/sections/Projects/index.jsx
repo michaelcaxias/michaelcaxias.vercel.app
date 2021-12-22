@@ -20,6 +20,7 @@ export default function Projects() {
             />
           ))}
       </section>
+      <br />
     </ProjectsStyle>
   );
 }
