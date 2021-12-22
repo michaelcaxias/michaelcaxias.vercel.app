@@ -5,7 +5,7 @@ import projectsData from '../../services/projects_data';
 
 export default function Projects() {
   return (
-    <ProjectsStyle>
+    <ProjectsStyle id="projects">
       <h1>Projetos</h1>
       <section className="projects-cards">
         {projectsData && projectsData

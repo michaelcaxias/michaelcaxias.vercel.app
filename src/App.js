@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { MyContext } from './context/MyProvider';
 
-import { dark, light } from './styles/Theme';
+import { dark, light } from './styles/theme';
 
 import GlobalStyle from './styles/global';
 import About from './sections/About/index';
