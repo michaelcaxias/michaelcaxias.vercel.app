@@ -40,7 +40,7 @@ export const ButtonSecondary = styled.button`
 
 export const MenuStyle = styled.ul`
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: ${(props) => props.theme.color.contextMenu};
   backdrop-filter: blur(10px);
   border-radius: 8px;
   width: 150px;
@@ -50,12 +50,15 @@ export const MenuStyle = styled.ul`
   list-style: none;
   opacity: 1;
   transition: opacity 0.5s linear;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   z-index: 100;
   button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: ${(props) => props.theme.color.text};
+    text-align: left;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     cursor: pointer;
     width: 100%;
     padding: 0.5rem 1rem;
