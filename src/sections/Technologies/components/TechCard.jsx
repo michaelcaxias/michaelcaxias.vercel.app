@@ -1,0 +1,20 @@
+import PropTypes from 'prop-types';
+import React from 'react';
+
+export default function TechCard({ title, iconOne, iconTwo }) {
+  return (
+    <section>
+      <h2>{title}</h2>
+      <section>
+        {iconOne}
+        {iconTwo}
+      </section>
+    </section>
+  );
+}
+
+TechCard.propTypes = {
+  iconOne: PropTypes.node.isRequired,
+  iconTwo: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+};
