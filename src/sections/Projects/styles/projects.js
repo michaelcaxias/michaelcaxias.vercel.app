@@ -30,12 +30,9 @@ const ProjectsStyle = styled.section`
     }
   }
   .projects-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    width: 80%;
   }
   .card {
     background-color: white;
