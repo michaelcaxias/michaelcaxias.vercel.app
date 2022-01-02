@@ -27,7 +27,7 @@ const FooterStyle = styled.footer`
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
       li {
         display: flex;
@@ -65,10 +65,20 @@ const FooterStyle = styled.footer`
   footer {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
     align-items: center;
     padding: 4rem 1rem;
     background-color: ${(props) => props.theme.color.primary};
     color: ${(props) => props.theme.color.text};
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      a {
+        font-size: 2.75em;
+        color: ${(props) => props.theme.color.text};
+      }
+    }
   }
 `;
 
