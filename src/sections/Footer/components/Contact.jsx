@@ -3,26 +3,14 @@ import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { HiLocationMarker } from 'react-icons/hi';
 import ContactItem from './ContactItem';
+import SendEmail from './SendEmail';
 
 export default function Contact() {
   return (
     <section className="contact-section">
       <section>
         <h1>Fale comigo!</h1>
-        <form>
-          <label htmlFor="name">
-            Nome
-            <input type="text" name="name" id="name" />
-          </label>
-          <label htmlFor="email">
-            E-mail
-            <input type="email" name="email" id="email" />
-          </label>
-          <label htmlFor="message">
-            Mensagem
-            <textarea name="name" id="name" />
-          </label>
-        </form>
+        <SendEmail />
       </section>
       <nav>
         <ul>
