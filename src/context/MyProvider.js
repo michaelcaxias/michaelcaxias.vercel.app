@@ -9,7 +9,7 @@ export function MyProvider({ children }) {
   useEffect(() => {
     const setOrCreateThemeStorage = () => {
       const darkModeStorage = JSON.parse(localStorage.getItem('darkMode'));
-      if (!darkModeStorage) localStorage.setItem('darkMode', darkMode);
+      if (darkModeStorage === null) localStorage.setItem('darkMode', darkMode);
       return setDarkMode(darkModeStorage);
     };
     setOrCreateThemeStorage();
