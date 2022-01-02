@@ -1,20 +1,19 @@
 import React from 'react';
+import { TextField } from '@mui/material';
 
 export default function SendEmail() {
   return (
-    <form>
-      <label htmlFor="name">
-        Nome
-        <input type="text" name="name" id="name" />
-      </label>
-      <label htmlFor="email">
-        E-mail
-        <input type="email" name="email" id="email" />
-      </label>
-      <label htmlFor="message">
-        Mensagem
-        <textarea name="name" id="name" />
-      </label>
+    <form className="send-email">
+      <TextField label="Nome" variant="filled" color="primary" />
+      <TextField label="E-mail" variant="filled" color="primary" />
+      <TextField
+        label="Mensagem"
+        variant="filled"
+        color="primary"
+        multiline
+        rows={ 4 }
+        maxRows={ 5 }
+      />
     </form>
   );
 }
