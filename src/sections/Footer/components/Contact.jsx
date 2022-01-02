@@ -14,6 +14,14 @@ export default function Contact() {
             Nome
             <input type="text" name="name" id="name" />
           </label>
+          <label htmlFor="email">
+            E-mail
+            <input type="email" name="email" id="email" />
+          </label>
+          <label htmlFor="message">
+            Mensagem
+            <textarea name="name" id="name" />
+          </label>
         </form>
       </section>
       <nav>
