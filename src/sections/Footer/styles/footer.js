@@ -42,11 +42,14 @@ const FooterStyle = styled.footer`
         color: ${(props) => props.theme.color.primary};
         font-weight: bold;
       }
-      .textfield {
+      .MuiFormControl-root {
         background-color: ${(props) => props.theme.color.background};
       }
-      .MuiFilledInput-root:after {
-        border-bottom-color: ${(props) => props.theme.color.primary};
+      .MuiFilledInput-root {
+        color: ${(props) => props.theme.color.text};
+        &:after {
+          border-bottom-color: ${(props) => props.theme.color.primary};
+        }
       }
     }
   }

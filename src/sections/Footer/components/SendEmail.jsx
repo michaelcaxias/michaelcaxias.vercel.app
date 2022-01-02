@@ -6,17 +6,14 @@ export default function SendEmail() {
   return (
     <form className="send-email">
       <TextField
-        className="textfield"
         label="Nome"
         variant="filled"
       />
       <TextField
-        className="textfield"
         label="E-mail"
         variant="filled"
       />
       <TextField
-        className="textfield"
         label="Mensagem"
         variant="filled"
         multiline
