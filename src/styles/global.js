@@ -25,4 +25,7 @@ export default createGlobalStyle`
     background: ${(props) => props.theme.color.primary}; 
     border-radius: 10px;
   }
+  ul {
+    list-style: none;
+  }
 `;

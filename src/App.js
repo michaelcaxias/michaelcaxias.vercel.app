@@ -9,10 +9,10 @@ import { dark, light } from './styles/theme';
 
 import GlobalStyle from './styles/global';
 import About from './sections/About/index';
-import Contact from './sections/Contact/index';
 import Projects from './sections/Projects/index';
 import Technologies from './sections/Technologies/index';
 import Menu from './components/Menu';
+import Footer from './sections/Footer/index';
 
 export default function App() {
   const { darkMode } = useContext(MyContext);
@@ -24,7 +24,7 @@ export default function App() {
         <About />
         <Projects />
         <Technologies />
-        <Contact />
+        <Footer />
       </ThemeProvider>
     </BrowserRouter>
   );
