@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FooterStyle = styled.footer`
   .contact-section {
-    padding: 4.5rem 4.5rem;
+    padding: 4.5rem 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -19,7 +19,7 @@ const FooterStyle = styled.footer`
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     li {
       display: flex;
@@ -27,12 +27,26 @@ const FooterStyle = styled.footer`
       gap: 1rem;
       font-weight: bold;
     }
+    .send-email-section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      width: 30%;
+    }
     .send-email {
       display: flex;
       flex-direction: column;
+      gap: 1rem;
       label {
-        display: flex;
-        flex-direction: column;
+        color: ${(props) => props.theme.color.primary};
+        font-weight: bold;
+      }
+      .textfield {
+        background-color: ${(props) => props.theme.color.background};
+      }
+      .MuiFilledInput-root:after {
+        border-bottom-color: ${(props) => props.theme.color.primary};
       }
     }
   }

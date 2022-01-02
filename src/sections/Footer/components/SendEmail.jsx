@@ -1,19 +1,31 @@
 import React from 'react';
 import { TextField } from '@mui/material';
+import { ButtonPrimary } from '../../../styles/index';
 
 export default function SendEmail() {
   return (
     <form className="send-email">
-      <TextField label="Nome" variant="filled" color="primary" />
-      <TextField label="E-mail" variant="filled" color="primary" />
       <TextField
+        className="textfield"
+        label="Nome"
+        variant="filled"
+      />
+      <TextField
+        className="textfield"
+        label="E-mail"
+        variant="filled"
+        color="secondary"
+      />
+      <TextField
+        className="textfield"
         label="Mensagem"
         variant="filled"
-        color="primary"
+        color="secondary"
         multiline
         rows={ 4 }
         maxRows={ 5 }
       />
+      <ButtonPrimary>Enviar</ButtonPrimary>
     </form>
   );
 }
