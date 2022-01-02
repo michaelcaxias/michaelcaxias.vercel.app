@@ -2,15 +2,24 @@ import styled from 'styled-components';
 
 const FooterStyle = styled.footer`
   .contact-section {
-    padding: 4.5rem 1rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4.5rem 1rem;
     background-color: ${(props) => props.theme.color.secondaryAlternative};
     color: ${(props) => props.theme.color.text};
     h1 {
-      font-size: 3rem;
-    }
+    font-size: 2.5rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     svg {
       color: ${(props) => props.theme.color.primary};
       font-size: 1.5rem;
