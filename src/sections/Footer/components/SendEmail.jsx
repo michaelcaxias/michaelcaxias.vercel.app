@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { TextField } from '@mui/material';
+import { ButtonPrimary } from '../../../styles/index';
 
 export default function SendEmail() {
   const [name, setName] = useState('');
@@ -48,7 +49,7 @@ export default function SendEmail() {
         multiline
         rows={ 4 }
       />
-      <input type="submit" value="Enviar" />
+      <ButtonPrimary type="submit">Enviar</ButtonPrimary>
     </form>
   );
 }
