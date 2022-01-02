@@ -1,4 +1,8 @@
 import React from 'react';
+import { MdEmail } from 'react-icons/md';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { HiLocationMarker } from 'react-icons/hi';
+import ContactItem from './ContactItem';
 
 export default function Contact() {
   return (
@@ -8,9 +12,9 @@ export default function Contact() {
         <button type="button">WhatsApp</button>
         <nav>
           <ul>
-            <li>
-              7michaeel7@gmail.com
-            </li>
+            <ContactItem icon={ <MdEmail /> } text="7michaeel7@gmail.com" />
+            <ContactItem icon={ <BsFillTelephoneFill /> } text="(91) 9 9631-0510" />
+            <ContactItem icon={ <HiLocationMarker /> } text="Belém, Pará, Brasil" />
           </ul>
         </nav>
       </section>
