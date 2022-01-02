@@ -13,14 +13,14 @@ export default function SocialNetworks() {
           <BsInstagram />
         </a>
         <a
-          href="https://www.instagram.com/michaelcaxias/"
+          href="https://br.linkedin.com/in/michaelcaxias"
           target="_blank"
           rel="noopener noreferrer"
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://www.instagram.com/michaelcaxias/"
+          href="https://github.com/michaelcaxias/"
           target="_blank"
           rel="noopener noreferrer"
         >

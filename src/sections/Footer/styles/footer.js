@@ -77,6 +77,10 @@ const FooterStyle = styled.footer`
       a {
         font-size: 2.75em;
         color: ${(props) => props.theme.color.text};
+        transition: 0.5s;
+        &:hover {
+          color: #2E2534;
+        }
       }
     }
   }
