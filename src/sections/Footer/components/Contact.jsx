@@ -21,6 +21,7 @@ export default function Contact() {
           </ul>
         </nav>
       </section>
+      <br />
     </section>
   );
 }
