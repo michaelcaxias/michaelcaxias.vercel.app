@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+import { BsFillTelephoneFill, BsWhatsapp } from 'react-icons/bs';
 import { HiLocationMarker } from 'react-icons/hi';
 import ContactItem from './ContactItem';
 
@@ -9,7 +9,10 @@ export default function Contact() {
     <section>
       <section>
         <h2>Fale comigo!</h2>
-        <button type="button">WhatsApp</button>
+        <button type="button">
+          <BsWhatsapp />
+          WhatsApp
+        </button>
         <nav>
           <ul>
             <ContactItem icon={ <MdEmail /> } text="7michaeel7@gmail.com" />
