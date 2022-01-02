@@ -2,8 +2,6 @@
 import styled from 'styled-components';
 
 const AboutStyle = styled.section`
-  display: flex;
-  flex-direction: column;
   header {
     display: flex;
     justify-content: flex-end;
