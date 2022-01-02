@@ -14,13 +14,11 @@ export default function SendEmail() {
         className="textfield"
         label="E-mail"
         variant="filled"
-        color="secondary"
       />
       <TextField
         className="textfield"
         label="Mensagem"
         variant="filled"
-        color="secondary"
         multiline
         rows={ 4 }
         maxRows={ 5 }

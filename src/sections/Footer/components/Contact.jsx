@@ -7,7 +7,7 @@ import SendEmail from './SendEmail';
 
 export default function Contact() {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <section className="send-email-section">
         <h1>Fale comigo!</h1>
         <SendEmail />
