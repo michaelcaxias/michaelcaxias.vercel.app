@@ -5,7 +5,7 @@ const FooterStyle = styled.footer`
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 4.5rem 1rem;
+    padding: 4.5rem 1rem 6.5rem 1rem;
     background-color: ${(props) => props.theme.color.secondaryAlternative};
     color: ${(props) => props.theme.color.text};
     h1 {
@@ -81,6 +81,18 @@ const FooterStyle = styled.footer`
         &:hover {
           color: #EAFAFF;
         }
+      }
+    }
+  }
+  @media (max-width: 990px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 6rem;
+      .send-email-section {
+        width: 40vh !important;
+      }
+      ul {
+        font-size: 1.2rem !important;
       }
     }
   }

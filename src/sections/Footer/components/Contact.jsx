@@ -15,13 +15,12 @@ export default function Contact() {
         </section>
         <nav>
           <ul>
-            <ContactItem icon={ <MdEmail /> } text="7michaeel7@gmail.com" />
+            <ContactItem icon={ <MdEmail /> } text="contato@michaelcaxias.com.br" />
             <ContactItem icon={ <BsFillTelephoneFill /> } text="(91) 9 9631-0510" />
             <ContactItem icon={ <HiLocationMarker /> } text="Belém, Pará, Brasil" />
           </ul>
         </nav>
       </section>
-      <br />
     </section>
   );
 }
