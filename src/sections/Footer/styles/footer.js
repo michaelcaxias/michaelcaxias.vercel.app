@@ -84,6 +84,15 @@ const FooterStyle = styled.footer`
       }
     }
   }
+  @media (max-width: 990px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 3rem;
+      .send-email-section {
+        width: 40vh !important;
+      }
+    }
+  }
 `;
 
 export default FooterStyle;
