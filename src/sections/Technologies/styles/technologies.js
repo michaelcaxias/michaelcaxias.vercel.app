@@ -72,6 +72,21 @@ const TechnologiesStyle = styled.section`
       width: 100%;
     }
   }
+  @media (max-width: 990px) {
+    .cards-tech {
+      grid-template-columns: 1fr;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      &::after {
+        width: 0;
+      }
+      &::before {
+        width: 0;
+      }
+    }
+  } 
 `;
 
 export default TechnologiesStyle;
