@@ -8,7 +8,10 @@ const AboutStyle = styled.section`
     transition: 0.3s;
     background-color: ${(props) => props.theme.color.background};
     .mobile-menu {
-    display: none;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
     }
     .nav-menu {
       align-items: center;
@@ -118,8 +121,6 @@ const AboutStyle = styled.section`
         border: none;
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 50px;
         height: 50px;
         cursor: pointer;
