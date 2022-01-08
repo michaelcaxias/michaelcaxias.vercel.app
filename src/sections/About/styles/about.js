@@ -7,6 +7,9 @@ const AboutStyle = styled.section`
     justify-content: flex-end;
     transition: 0.3s;
     background-color: ${(props) => props.theme.color.background};
+    .mobile-menu {
+    display: none;
+    }
     nav {
       align-items: center;
       display: flex;
@@ -97,7 +100,53 @@ const AboutStyle = styled.section`
   }
   @media (max-width: 990px) {
     header {
-      display: none;
+      nav {
+        display: none;
+      }
+      .mobile-menu {
+        background: transparent;
+        border: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+      }
+      .menu-bar {
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+        &::before, ::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 40px;
+          height: 6px;
+          background: #FF8DA4;
+          border-radius: 5px;
+          transition: all .5s ease-in-out;
+        }
+        &::before {
+          transform: translateY(-8px);
+        }
+        &::after {
+          transform: translateY(8px);
+        }
+      }
+      .mobile-menu.open {
+        .menu-bar {
+          background: transparent;
+          box-shadow: none;
+          &::before {
+            transform: rotate(45deg);
+          }
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
     }
     text-align: center;
     .hero-section {
