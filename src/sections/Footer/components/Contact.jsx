@@ -8,12 +8,17 @@ import SendEmail from './SendEmail';
 export default function Contact() {
   return (
     <section id="contact" className="contact-section">
-      <h1>Fale comigo!</h1>
+      <h1 data-aos="fade-up">Fale comigo!</h1>
       <section className="contact-info">
-        <section className="send-email-section">
+        <section
+          className="send-email-section"
+          data-aos="fade-right"
+        >
           <SendEmail />
         </section>
-        <nav>
+        <nav
+          data-aos="fade-left"
+        >
           <ul>
             <ContactItem icon={ <MdEmail /> } text="contato@michaelcaxias.com.br" />
             <ContactItem icon={ <BsFillTelephoneFill /> } text="(91) 9 9631-0510" />

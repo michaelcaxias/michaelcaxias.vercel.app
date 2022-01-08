@@ -10,7 +10,7 @@ import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
 export default function Card(props) {
   const { image, title, description, github, website } = props;
   return (
-    <section className="card">
+    <section className="card" data-aos="zoom-in">
       <section
         className="card-heading"
         style={ { backgroundImage: `url(${image})` } }

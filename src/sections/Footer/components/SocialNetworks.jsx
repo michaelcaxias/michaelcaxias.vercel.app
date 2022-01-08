@@ -9,6 +9,7 @@ export default function SocialNetworks() {
           href="https://www.instagram.com/michaelcaxias/"
           target="_blank"
           rel="noopener noreferrer"
+          data-aos="flip-left"
         >
           <BsInstagram />
         </a>
@@ -16,6 +17,7 @@ export default function SocialNetworks() {
           href="https://br.linkedin.com/in/michaelcaxias"
           target="_blank"
           rel="noopener noreferrer"
+          data-aos="flip-right"
         >
           <BsLinkedin />
         </a>
@@ -23,6 +25,7 @@ export default function SocialNetworks() {
           href="https://github.com/michaelcaxias/"
           target="_blank"
           rel="noopener noreferrer"
+          data-aos="flip-left"
         >
           <BsGithub />
         </a>

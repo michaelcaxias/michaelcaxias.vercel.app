@@ -11,7 +11,7 @@ import TechCard from './components/TechCard';
 export default function Technologies() {
   return (
     <TechnologiesStyle id="technologies">
-      <h1>Ferramentas e Tecnologias</h1>
+      <h1 data-aos="fade-up">Ferramentas e Tecnologias</h1>
       <section className="cards-tech">
         <TechCard
           title="React e Redux"
