@@ -3,7 +3,10 @@ import React from 'react';
 
 export default function TechCard({ title, iconOne, iconTwo }) {
   return (
-    <section className="tech-card">
+    <section
+      className="tech-card"
+      data-aos="fade-up"
+    >
       <h2>{title}</h2>
       <section className="icons-card">
         {iconOne}
