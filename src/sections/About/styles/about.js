@@ -69,6 +69,7 @@ const AboutStyle = styled.section`
   }
   .buttons-group {
     display: flex;
+    width: fit-content;
     gap: 0.9rem;
   }
   .curriculum-button {
@@ -93,6 +94,34 @@ const AboutStyle = styled.section`
     height: 360px;
     border-radius: 50%;
     box-shadow: 20px -30px 0 #EAFAFF;
+  }
+  @media (max-width: 990px) {
+    header {
+      display: none;
+    }
+    text-align: center;
+    .hero-section {
+      padding: 5rem;
+      height: 100%;
+      .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2.5rem;
+        .about-section {
+          h1 {
+            font-size: 2rem;
+          }
+          .buttons-group {
+            flex-direction: column;
+            width: auto;
+          }
+        }
+      }
+    }
+    .circle-picture {
+      width: 300px;
+      height: 300px;
+    }
   }
 `;
 
