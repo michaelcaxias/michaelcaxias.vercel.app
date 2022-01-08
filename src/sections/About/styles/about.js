@@ -10,7 +10,7 @@ const AboutStyle = styled.section`
     .mobile-menu {
     display: none;
     }
-    nav {
+    .nav-menu {
       align-items: center;
       display: flex;
       justify-content: center;
@@ -100,8 +100,18 @@ const AboutStyle = styled.section`
   }
   @media (max-width: 990px) {
     header {
-      nav {
-        display: none;
+      .nav-menu {
+        visibility: hidden;
+        overflow: hidden;
+        position: absolute;
+        flex-direction: column;
+        background-color: ${(props) => props.theme.color.background};
+        top: 0;
+        padding: 0;
+        width: 100%;
+        height: 0;
+        font-size: 2rem;
+        transition: all .5s ease-in-out;
       }
       .mobile-menu {
         background: transparent;
@@ -144,6 +154,27 @@ const AboutStyle = styled.section`
           }
           &::after {
             transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .open {
+      .nav-menu {
+        display: flex;
+        visibility: visible;
+        height: 100%;
+        a {
+          width: 100%;
+          &:hover {
+            background-color: ${(props) => props.theme.color.secondaryAlternative};
+          }
+        }
+        button {
+          justify-content: center;
+          font-size: 3.5rem;
+          width: 100%;
+          &:hover {
+            background-color: ${(props) => props.theme.color.secondaryAlternative};
           }
         }
       }

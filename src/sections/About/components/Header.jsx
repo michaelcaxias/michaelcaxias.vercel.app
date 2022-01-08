@@ -17,8 +17,8 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <nav id="menu">
+    <header className={ isOpen && 'open' }>
+      <nav className="nav-menu">
         <button type="button" onClick={ () => changeTheme() }>
           {darkMode ? <MdWbSunny /> : <IoMdMoon />}
         </button>
