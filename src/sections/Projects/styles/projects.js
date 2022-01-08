@@ -9,7 +9,7 @@ const ProjectsStyle = styled.section`
   gap: 4rem;
   background-color: ${(props) => props.theme.color.secondaryAlternative};
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: ${(props) => props.theme.color.text};
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ const ProjectsStyle = styled.section`
   .card {
     background-color: white;
     border-radius: 8px;
-    width: 27rem;
+    width: 65vh;
     transition: all 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -77,6 +77,22 @@ const ProjectsStyle = styled.section`
     }
     &:hover {
       transform: scale(1.005);
+    }
+  }
+  @media (max-width: 990px) {
+    .projects-cards {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      width: 100%;
+    }
+    h1 {
+      &::after {
+        width: 0;
+      }
+      &::before {
+        width: 0;
+      }
     }
   }
 `;
