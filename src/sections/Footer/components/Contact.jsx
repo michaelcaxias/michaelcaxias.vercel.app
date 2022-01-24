@@ -17,7 +17,7 @@ export default function Contact() {
           <SendEmail />
         </section>
         <nav
-          data-aos="fade-left"
+          data-aos="fade-right"
         >
           <ul>
             <ContactItem icon={ <MdEmail /> } text="contato@michaelcaxias.com.br" />
