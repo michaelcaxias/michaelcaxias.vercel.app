@@ -1,17 +1,17 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import example from '../images/example.png';
+import trybeSchedule from '../images/trybe-schedule.png';
 
 export default [
   {
-    image: example,
-    title: 'Titulo do Projeto',
+    image: trybeSchedule,
+    title: 'Trybe Schedule',
     description: `
-    Amet minim mollit non deserunt ullamco est sit
-    aliqua dolor do amet sint. Velit officia consequat
-    duis enim velit mollit.
+    Projeto criado com o intuito de ajudar os estudantes da Trybe
+    a sincronizarem as suas aulas com o Google Calendar.
     `,
-    github: '',
-    website: '',
+    github: 'https://github.com/michaelcaxias/trybe-schedule',
+    website: 'https://trybe-schedule.vercel.app/',
   },
   {
     image: example,
