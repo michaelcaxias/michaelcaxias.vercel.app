@@ -22,10 +22,9 @@ export default function Header() {
         <button type="button" onClick={ () => changeTheme() }>
           {darkMode ? <MdWbSunny /> : <IoMdMoon />}
         </button>
-        <a href="#about">Sobre</a>
-        <a href="#projects">Projetos</a>
-        <a href="#technologies">Tecnologias</a>
-        <a href="#contact">Contato</a>
+        <a onClick={ toggleMenu } href="#projects">Projetos</a>
+        <a onClick={ toggleMenu } href="#technologies">Tecnologias</a>
+        <a onClick={ toggleMenu } href="#contact">Contato</a>
       </nav>
       <button
         className={ isOpen ? 'mobile-menu open' : 'mobile-menu' }
