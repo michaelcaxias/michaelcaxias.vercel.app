@@ -8,7 +8,7 @@ export default createGlobalStyle`
     margin: 0;
   }
   
-  body {
+  body, html {
     font-family: 'Heebo', 'sans-serif';
     scroll-behavior: smooth;
   }
