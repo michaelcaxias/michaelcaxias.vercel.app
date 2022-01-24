@@ -1,6 +1,7 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import example from '../images/example.png';
 import trybeSchedule from '../images/trybe-schedule.png';
+
+const title = 'Titulo do Projeto';
 
 export default [
   {
@@ -15,7 +16,7 @@ export default [
   },
   {
     image: example,
-    title: 'Titulo do Projeto',
+    title,
     description: `
     Amet minim mollit non deserunt ullamco est sit
     aliqua dolor do amet sint. Velit officia consequat
@@ -26,7 +27,7 @@ export default [
   },
   {
     image: example,
-    title: 'Titulo do Projeto',
+    title,
     description: `
     Amet minim mollit non deserunt ullamco est sit
     aliqua dolor do amet sint. Velit officia consequat
@@ -37,7 +38,7 @@ export default [
   },
   {
     image: example,
-    title: 'Titulo do Projeto',
+    title,
     description: `
     Amet minim mollit non deserunt ullamco est sit
     aliqua dolor do amet sint. Velit officia consequat
