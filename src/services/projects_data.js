@@ -28,7 +28,7 @@ export default [
     image: twelveStore,
     title: 'Twelve Store',
     description: `
-    Projeto feito com o objetivo de treinar as metodologias ágeis
+    Projeto feito em grupo com o objetivo de treinar as metodologias ágeis
     com DM's e Kanbam, além de utilizarmos Redux para o gerenciamento de estados.
     `,
     github: 'https://github.com/michaelcaxias/twelve-store',
