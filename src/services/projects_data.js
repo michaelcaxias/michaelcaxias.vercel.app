@@ -1,4 +1,3 @@
-import example from '../images/example.png';
 import backendDefault from '../images/backend.jpg';
 import trybeSchedule from '../images/trybe-schedule.png';
 import twelveStore from '../images/twelveStore.png';
