@@ -1,7 +1,7 @@
-import example from '../images/example.png';
+import backendDefault from '../images/backend.jpg';
 import trybeSchedule from '../images/trybe-schedule.png';
-
-const title = 'Titulo do Projeto';
+import twelveStore from '../images/twelveStore.png';
+import recipesApp from '../images/recipes-app.png';
 
 export default [
   {
@@ -15,36 +15,33 @@ export default [
     website: 'https://trybe-schedule.vercel.app/',
   },
   {
-    image: example,
-    title,
+    image: backendDefault,
+    title: 'Blogs API',
     description: `
-    Amet minim mollit non deserunt ullamco est sit
-    aliqua dolor do amet sint. Velit officia consequat
-    duis enim velit mollit.
+    Projeto com objetivo de criar um CRUD
+    a partir da criação de uma API RESTful utilizando as estruturas ORM e MSC.
     `,
-    github: '',
-    website: '',
+    github: 'https://github.com/michaelcaxias/blogs-api',
+    website: 'https://github.com/michaelcaxias/blogs-api',
   },
   {
-    image: example,
-    title,
+    image: twelveStore,
+    title: 'Twelve Store',
     description: `
-    Amet minim mollit non deserunt ullamco est sit
-    aliqua dolor do amet sint. Velit officia consequat
-    duis enim velit mollit.
+    Projeto feito em grupo com o objetivo de treinar as metodologias ágeis
+    com DM's e Kanbam, além de utilizarmos Redux para o gerenciamento de estados.
     `,
-    github: '',
-    website: '',
+    github: 'https://github.com/michaelcaxias/twelve-store',
+    website: 'https://twelve-store.vercel.app/',
   },
   {
-    image: example,
-    title,
+    image: recipesApp,
+    title: 'Recipes App',
     description: `
-    Amet minim mollit non deserunt ullamco est sit
-    aliqua dolor do amet sint. Velit officia consequat
-    duis enim velit mollit.
+    Projeto feito em grupo com o objetivo de treinar
+    as metodologias ágeis com DM's e Kanbam, React e Bootstrap.
     `,
-    github: '',
-    website: '',
+    github: 'https://github.com/michaelcaxias/recipes-app',
+    website: 'https://github.com/michaelcaxias/recipes-app',
   },
 ];
