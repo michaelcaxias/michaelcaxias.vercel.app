@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 import { TextField } from '@mui/material';
 import { ButtonPrimary } from '../../../styles/index';
@@ -17,10 +18,23 @@ export default function SendEmail() {
       event.target,
       'user_Mj27p5lKIVSbhSnwPfLiQ',
     )
-      .then((result) => {
-        console.log(result.text);
+      .then(() => {
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'E-mail enviado com sucesso!',
+          showConfirmButton: false,
+          timer: 1500,
+        });
       }, (error) => {
-        console.log(error.text);
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Ocorreu um erro ao enviar o e-mail!',
+          description: error.text,
+          showConfirmButton: false,
+          timer: 1500,
+        });
       });
   };
 
