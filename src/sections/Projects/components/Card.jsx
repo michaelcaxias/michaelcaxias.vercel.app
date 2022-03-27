@@ -8,7 +8,7 @@ import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
 import { MyContext } from '../../../context/MyProvider';
 
 export default function Card(props) {
-  const { image, title, description, github, website } = props;
+  const { image, title, description, github, website, modalInfo } = props;
   const { handleOpen, setModalData } = useContext(MyContext);
   return (
     <section
@@ -20,7 +20,7 @@ export default function Card(props) {
         type="button"
         onClick={ (e) => {
           if (e.target.nodeName !== 'BUTTON') {
-            setModalData({ title });
+            setModalData({ title, ...modalInfo });
             handleOpen();
           }
         } }
@@ -61,4 +61,8 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
+  modalInfo: PropTypes.shape({
+    deepDescription: PropTypes.string.isRequired,
+    stacks: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };

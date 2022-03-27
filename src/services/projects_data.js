@@ -3,6 +3,21 @@ import trybeSchedule from '../images/trybe-schedule.png';
 import twelveStore from '../images/twelveStore.png';
 import recipesApp from '../images/recipes-app.png';
 
+const REACT = 'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB';
+const JAVASCRIPT = 'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB';
+const CSS3 = 'https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white';
+const SASS = 'https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white';
+const CYPRESS = 'https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white';
+const BOOTSTRAP = 'https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white';
+const TESTING_LIBRARY = 'https://img.shields.io/badge/testing%20library-F22F46?style=for-the-badge&logo=testing-library&logoColor=white';
+const MATERIALUI = 'https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white';
+const SEMANTICUI = 'https://img.shields.io/badge/semantic%20ui%20react-35BDB2?style=for-the-badge&logo=semanticuireact&logoColor=white';
+
+const MYSQL = 'https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white';
+const SEQUELIZE = 'https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white';
+const NODE = 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white';
+const JWT = 'https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white';
+
 export default [
   {
     image: trybeSchedule,
@@ -13,6 +28,10 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/trybe-schedule',
     website: 'https://trybe-schedule.vercel.app/',
+    modalInfo: {
+      deepDescription: 'TESTEEEEEEEEEEEE',
+      stacks: [REACT, JAVASCRIPT, SASS, MATERIALUI, CYPRESS],
+    },
   },
   {
     image: backendDefault,
@@ -23,6 +42,10 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/blogs-api',
     website: 'https://github.com/michaelcaxias/blogs-api',
+    modalInfo: {
+      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEE',
+      stacks: [MYSQL, NODE, SEQUELIZE, JWT],
+    },
   },
   {
     image: twelveStore,
@@ -33,6 +56,10 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/twelve-store',
     website: 'https://twelve-store.vercel.app/',
+    modalInfo: {
+      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEE',
+      stacks: [REACT, JAVASCRIPT, CSS3, SEMANTICUI],
+    },
   },
   {
     image: recipesApp,
@@ -43,5 +70,9 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/recipes-app',
     website: 'https://github.com/michaelcaxias/recipes-app',
+    modalInfo: {
+      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEEEEE',
+      stacks: [REACT, JAVASCRIPT, CSS3, BOOTSTRAP, TESTING_LIBRARY],
+    },
   },
 ];
