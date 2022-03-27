@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
 import { AiFillGithub } from 'react-icons/ai';
 import { CgWebsite } from 'react-icons/cg';
 
 import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
+import { MyContext } from '../../../context/MyProvider';
 
 export default function Card(props) {
   const { image, title, description, github, website } = props;
-  const [isOpen, handleOpen] = useState(false);
+  const { handleOpen } = useContext(MyContext);
   return (
     <section
       className="card"
@@ -17,7 +18,7 @@ export default function Card(props) {
       <button
         className="invisible-button"
         type="button"
-        onClick={ () => handleOpen((prevState) => !prevState) }
+        onClick={ () => handleOpen() }
       >
         <section
           className="card-heading"
@@ -30,7 +31,7 @@ export default function Card(props) {
         <button
           className="invisible-button"
           type="button"
-          onClick={ () => handleOpen((prevState) => !prevState) }
+          onClick={ () => handleOpen() }
         >
           <p>
             {description}

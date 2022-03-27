@@ -16,7 +16,7 @@ import Footer from './sections/Footer/index';
 import Modal from './components/Modal';
 
 export default function App() {
-  const { darkMode, isModalOpen } = useContext(MyContext);
+  const { darkMode, isOpen } = useContext(MyContext);
   return (
     <BrowserRouter>
       <ThemeProvider theme={ darkMode ? dark : light }>
@@ -26,7 +26,7 @@ export default function App() {
         <Projects />
         <Technologies />
         <Footer />
-        {isModalOpen && <Modal />}
+        {isOpen && <Modal />}
       </ThemeProvider>
     </BrowserRouter>
   );
