@@ -20,7 +20,7 @@ export default function Card(props) {
         type="button"
         onClick={ (e) => {
           if (e.target.nodeName !== 'BUTTON') {
-            setModalData({ title, ...modalInfo });
+            setModalData({ title, image, ...modalInfo });
             handleOpen();
           }
         } }

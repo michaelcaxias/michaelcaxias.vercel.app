@@ -18,6 +18,18 @@ const SEQUELIZE = 'https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-b
 const NODE = 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white';
 const JWT = 'https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white';
 
+const GENERAL_DESCRIPTION = `
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+consequat sunt nostrud amet.
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+consequat sunt nostrud amet.
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+consequat sunt nostrud amet.
+`;
+
 export default [
   {
     image: trybeSchedule,
@@ -29,7 +41,7 @@ export default [
     github: 'https://github.com/michaelcaxias/trybe-schedule',
     website: 'https://trybe-schedule.vercel.app/',
     modalInfo: {
-      deepDescription: 'TESTEEEEEEEEEEEE',
+      deepDescription: GENERAL_DESCRIPTION,
       stacks: [REACT, JAVASCRIPT, SASS, MATERIALUI, CYPRESS],
     },
   },
@@ -43,7 +55,7 @@ export default [
     github: 'https://github.com/michaelcaxias/blogs-api',
     website: 'https://github.com/michaelcaxias/blogs-api',
     modalInfo: {
-      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEE',
+      deepDescription: GENERAL_DESCRIPTION,
       stacks: [MYSQL, NODE, SEQUELIZE, JWT],
     },
   },
@@ -57,7 +69,7 @@ export default [
     github: 'https://github.com/michaelcaxias/twelve-store',
     website: 'https://twelve-store.vercel.app/',
     modalInfo: {
-      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEE',
+      deepDescription: GENERAL_DESCRIPTION,
       stacks: [REACT, JAVASCRIPT, CSS3, SEMANTICUI],
     },
   },
@@ -71,7 +83,7 @@ export default [
     github: 'https://github.com/michaelcaxias/recipes-app',
     website: 'https://github.com/michaelcaxias/recipes-app',
     modalInfo: {
-      deepDescription: 'TESTEEEEEEEEEEEEEEEEEEEEEEEE',
+      deepDescription: GENERAL_DESCRIPTION,
       stacks: [REACT, JAVASCRIPT, CSS3, BOOTSTRAP, TESTING_LIBRARY],
     },
   },

@@ -23,8 +23,9 @@ const ModalStyle = styled.section`
   }
   .modal {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: 0.3s;
+    border: 2px solid ${(props) => props.theme.color.secondaryAlternative};
     box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.7);
     .superior-bar {
       width: 100%;
@@ -80,6 +81,28 @@ const ModalStyle = styled.section`
         justify-content: center;
         margin-right: -78px;
         color: ${(props) => props.theme.color.text};
+      }
+    }
+    .modal-content {
+      width: 100%;
+      height: calc(100% - 40px);
+      background-color: ${(props) => props.theme.color.background};
+      display: flex;
+      color: ${(props) => props.theme.color.text};
+      .preview-app {
+        width: 65%;
+        height: 75%;
+      }
+      .aside-menu {
+        padding: 1rem;
+        width: 35%;
+        .stacks-group {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          overflow-y: auto;
+          max-height: 60px;
+        }
       }
     }
   }

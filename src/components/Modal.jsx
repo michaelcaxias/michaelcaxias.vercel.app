@@ -5,7 +5,7 @@ import { MyContext } from '../context/MyProvider';
 
 export default function Modal() {
   const { handleClose, modalData } = useContext(MyContext);
-  const { title, stacks, deepDescription } = modalData;
+  const { title, image, stacks, deepDescription } = modalData;
   const [isMaximized, maximize] = useState(false);
 
   const closeModal = ({ target }) => {
@@ -62,10 +62,19 @@ export default function Modal() {
             </button>
           </section>
         </section>
-        <p>{ deepDescription }</p>
-        { stacks && stacks.map((stack) => (
-          <img key={ stack } src={ stack } alt={ title } />
-        ))}
+        <section className="modal-content">
+          <img className="preview-app" src={ image } alt={ title } />
+          <aside className="aside-menu">
+            <p>{ deepDescription }</p>
+            <br />
+            <h3>Tecnologias Utilizadas:</h3>
+            <section className="stacks-group">
+              { stacks && stacks.map((stack) => (
+                <img key={ stack } src={ stack } alt={ title } />
+              ))}
+            </section>
+          </aside>
+        </section>
       </section>
     </ModalStyle>
   );
