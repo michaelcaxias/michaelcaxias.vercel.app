@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
@@ -18,7 +19,11 @@ export default function Card(props) {
       <button
         className="invisible-button"
         type="button"
-        onClick={ () => handleOpen() }
+        onClick={ (e) => {
+          if (e.target.nodeName !== 'BUTTON') {
+            handleOpen();
+          }
+        } }
       >
         <section
           className="card-heading"
@@ -26,32 +31,26 @@ export default function Card(props) {
         >
           <h2>{title}</h2>
         </section>
-      </button>
-      <section className="card-description">
-        <button
-          className="invisible-button"
-          type="button"
-          onClick={ () => handleOpen() }
-        >
+        <section className="card-description">
           <p>
             {description}
           </p>
-        </button>
-        <section className="buttons-group">
-          <a href={ github } target="_blank" rel="noopener noreferrer">
-            <ButtonSecondary>
-              Github
-              <AiFillGithub />
-            </ButtonSecondary>
-          </a>
-          <a href={ website } target="_blank" rel="noopener noreferrer">
-            <ButtonPrimary>
-              Website
-              <CgWebsite />
-            </ButtonPrimary>
-          </a>
+          <section className="buttons-group">
+            <a href={ github } target="_blank" rel="noopener noreferrer">
+              <ButtonSecondary>
+                Github
+                <AiFillGithub />
+              </ButtonSecondary>
+            </a>
+            <a href={ website } target="_blank" rel="noopener noreferrer">
+              <ButtonPrimary>
+                Website
+                <CgWebsite />
+              </ButtonPrimary>
+            </a>
+          </section>
         </section>
-      </section>
+      </button>
     </section>
   );
 }

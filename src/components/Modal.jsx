@@ -7,7 +7,6 @@ export default function Modal() {
   const { handleClose } = useContext(MyContext);
 
   const closeModal = ({ target }) => {
-    console.log(target.className);
     if (target.className.includes('modal-background')) {
       handleClose();
     }
