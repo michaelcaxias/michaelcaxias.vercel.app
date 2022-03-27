@@ -15,9 +15,9 @@ export default function Modal() {
 
   useEffect(() => {
     disableScroll.on();
-    document.body.style = 'overflow-y: hidden';
+    document.body.style = 'overflow: hidden';
     return () => {
-      document.body.style = 'overflow-y: auto';
+      document.body.style = 'overflow: auto';
       disableScroll.off();
     };
   }, []);
@@ -33,10 +33,13 @@ export default function Modal() {
         }
       >
         <section className="superior-bar">
+          <section className="window-title">
+            <h3>Nome do Projeto</h3>
+          </section>
           <section className="navigation-group">
             <button
               type="button"
-              className="navigation-button close"
+              className="navigation-button minimize"
               onClick={ handleClose }
             >
               .
@@ -51,7 +54,7 @@ export default function Modal() {
             </button>
             <button
               type="button"
-              className="navigation-button minimize"
+              className="navigation-button close"
               onClick={ handleClose }
             >
               .

@@ -1,5 +1,6 @@
 export const light = {
   color: {
+    shadowLight: '#ffff',
     background: '#ffff',
     primary: '#FF8DA4',
     secondary: '#F3FFFF',
@@ -11,6 +12,7 @@ export const light = {
 
 export const dark = {
   color: {
+    shadowLight: '#3d3045',
     background: '#2E2534',
     primary: '#FF8DA4',
     secondary: '#201925',
