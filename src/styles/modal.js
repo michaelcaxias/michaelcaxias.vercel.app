@@ -11,10 +11,8 @@ const ModalStyle = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  overflow-y: hidden;
   .modal {
     background-color: white;
   }
