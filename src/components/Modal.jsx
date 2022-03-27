@@ -21,7 +21,10 @@ export default function Modal() {
   }, []);
 
   return (
-    <ModalStyle className="modal-background" onClick={ (event) => closeModal(event) }>
+    <ModalStyle
+      className="modal-background"
+      onClick={ (event) => closeModal(event) }
+    >
       <section className="modal">
         <h1>Modal</h1>
         <p>modal modal modal</p>
