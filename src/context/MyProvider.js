@@ -5,6 +5,9 @@ export const MyContext = createContext();
 
 export function MyProvider({ children }) {
   const [darkMode, setDarkMode] = useState(true);
+  const [modalData, setModalData] = useState({
+    title: 'Titulo do Projeto',
+  });
   const [isOpen, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -31,6 +34,8 @@ export function MyProvider({ children }) {
     setOpen,
     handleOpen,
     handleClose,
+    modalData,
+    setModalData,
   };
 
   return (

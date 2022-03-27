@@ -4,7 +4,8 @@ import ModalStyle from '../styles/modal';
 import { MyContext } from '../context/MyProvider';
 
 export default function Modal() {
-  const { handleClose } = useContext(MyContext);
+  const { handleClose, modalData } = useContext(MyContext);
+  const { title } = modalData;
   const [isMaximized, maximize] = useState(false);
 
   const closeModal = ({ target }) => {
@@ -34,7 +35,7 @@ export default function Modal() {
       >
         <section className="superior-bar">
           <section className="window-title">
-            <h3>Nome do Projeto</h3>
+            <h3>{ title }</h3>
           </section>
           <section className="navigation-group">
             <button

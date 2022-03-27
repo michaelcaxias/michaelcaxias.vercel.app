@@ -9,7 +9,7 @@ import { MyContext } from '../../../context/MyProvider';
 
 export default function Card(props) {
   const { image, title, description, github, website } = props;
-  const { handleOpen } = useContext(MyContext);
+  const { handleOpen, setModalData } = useContext(MyContext);
   return (
     <section
       className="card"
@@ -20,6 +20,7 @@ export default function Card(props) {
         type="button"
         onClick={ (e) => {
           if (e.target.nodeName !== 'BUTTON') {
+            setModalData({ title });
             handleOpen();
           }
         } }
