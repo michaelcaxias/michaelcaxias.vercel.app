@@ -1,5 +1,4 @@
-/* eslint-disable react/jsx-max-depth */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { AiFillGithub } from 'react-icons/ai';
@@ -9,16 +8,34 @@ import { ButtonPrimary, ButtonSecondary } from '../../../styles/index';
 
 export default function Card(props) {
   const { image, title, description, github, website } = props;
+  const [isOpen, handleOpen] = useState(false);
   return (
-    <section className="card" data-aos="zoom-in">
-      <section
-        className="card-heading"
-        style={ { backgroundImage: `url(${image})` } }
+    <section
+      className="card"
+      data-aos="zoom-in"
+    >
+      <button
+        className="invisible-button"
+        type="button"
+        onClick={ () => handleOpen((prevState) => !prevState) }
       >
-        <h2>{title}</h2>
-      </section>
+        <section
+          className="card-heading"
+          style={ { backgroundImage: `url(${image})` } }
+        >
+          <h2>{title}</h2>
+        </section>
+      </button>
       <section className="card-description">
-        <p>{description}</p>
+        <button
+          className="invisible-button"
+          type="button"
+          onClick={ () => handleOpen((prevState) => !prevState) }
+        >
+          <p>
+            {description}
+          </p>
+        </button>
         <section className="buttons-group">
           <a href={ github } target="_blank" rel="noopener noreferrer">
             <ButtonSecondary>

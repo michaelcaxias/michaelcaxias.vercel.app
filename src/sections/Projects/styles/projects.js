@@ -39,6 +39,7 @@ const ProjectsStyle = styled.section`
     border-radius: 8px;
     width: 65vh;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     background-color: ${(props) => props.theme.color.background};
@@ -78,6 +79,14 @@ const ProjectsStyle = styled.section`
     &:hover {
       transform: scale(1.005);
     }
+  }
+  .invisible-button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
   }
   @media (max-width: 990px) {
     .projects-cards {

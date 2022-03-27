@@ -13,9 +13,10 @@ import Projects from './sections/Projects/index';
 import Technologies from './sections/Technologies/index';
 import Menu from './components/Menu';
 import Footer from './sections/Footer/index';
+import Modal from './components/Modal';
 
 export default function App() {
-  const { darkMode } = useContext(MyContext);
+  const { darkMode, isModalOpen } = useContext(MyContext);
   return (
     <BrowserRouter>
       <ThemeProvider theme={ darkMode ? dark : light }>
@@ -25,6 +26,7 @@ export default function App() {
         <Projects />
         <Technologies />
         <Footer />
+        {isModalOpen && <Modal />}
       </ThemeProvider>
     </BrowserRouter>
   );
