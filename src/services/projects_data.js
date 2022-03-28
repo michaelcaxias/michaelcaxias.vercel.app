@@ -39,6 +39,7 @@ export default [
     a sincronizarem as suas aulas com o Google Calendar.
     `,
     github: 'https://github.com/michaelcaxias/trybe-schedule',
+    repositoryPath: 'michaelcaxias/trybe-schedule',
     website: 'https://trybe-schedule.vercel.app/',
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,
@@ -53,6 +54,7 @@ export default [
     a partir da criação de uma API RESTful utilizando as estruturas ORM e MSC.
     `,
     github: 'https://github.com/michaelcaxias/blogs-api',
+    repositoryPath: 'michaelcaxias/blogs-api',
     website: 'https://github.com/michaelcaxias/blogs-api',
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,
@@ -67,6 +69,7 @@ export default [
     com DM's e Kanbam, além de utilizarmos Redux para o gerenciamento de estados.
     `,
     github: 'https://github.com/michaelcaxias/twelve-store',
+    repositoryPath: 'michaelcaxias/twelve-store',
     website: 'https://twelve-store.vercel.app/',
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,
@@ -81,6 +84,7 @@ export default [
     as metodologias ágeis com DM's e Kanbam, React e Bootstrap.
     `,
     github: 'https://github.com/michaelcaxias/recipes-app',
+    repositoryPath: 'michaelcaxias/recipes-app',
     website: 'https://github.com/michaelcaxias/recipes-app',
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,

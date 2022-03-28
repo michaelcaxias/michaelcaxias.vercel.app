@@ -63,7 +63,9 @@ export default function Modal() {
           </section>
         </section>
         <section className="modal-content">
-          <img className="preview-app" src={ image } alt={ title } />
+          <section className="left-content">
+            <img className="preview-app" src={ image } alt={ title } />
+          </section>
           <aside className="aside-menu">
             <p>{ deepDescription }</p>
             <br />

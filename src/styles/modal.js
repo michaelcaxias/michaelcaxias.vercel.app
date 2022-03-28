@@ -86,20 +86,34 @@ const ModalStyle = styled.section`
     .modal-content {
       width: 100%;
       height: calc(100% - 40px);
+      max-height: calc(100% - 40px);
+      overflow: auto;
       background-color: ${(props) => props.theme.color.background};
       display: flex;
       color: ${(props) => props.theme.color.text};
-      .preview-app {
-        max-width: 65%;
-        max-height: 75%;
+      position: relative;
+      .left-content {
+        background-color: ${(props) => props.theme.color.secondaryAlternative};
+        height: 100%;
+        width: 100%;
+        .preview-app {
+          max-width: 65%;
+          max-height: 75%;
+        }
       }
       .aside-menu {
+        background-color: ${(props) => props.theme.color.background};
+        justify-self: flex-end;
         padding: 1rem;
         width: 35%;
+        height: 100%;
+        position: absolute;
+        right: 0;
         .stacks-group {
           display: flex;
           flex-wrap: wrap;
           align-items: baseline;
+          gap: 0.5rem;
           overflow-y: auto;
           max-height: 60px;
         }
