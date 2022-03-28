@@ -1,18 +1,10 @@
 import React from 'react';
-import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 export default function SocialNetworks() {
   return (
     <footer>
       <nav>
-        <a
-          href="https://www.instagram.com/michaelcaxias/"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-aos="flip-left"
-        >
-          <BsInstagram />
-        </a>
         <a
           href="https://br.linkedin.com/in/michaelcaxias"
           target="_blank"
