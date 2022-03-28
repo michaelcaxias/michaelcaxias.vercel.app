@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import disableScroll from 'disable-scroll';
 import { BsGithub } from 'react-icons/bs';
 import ModalStyle from '../styles/modal';
 import { MyContext } from '../context/MyProvider';
@@ -17,11 +16,9 @@ export default function Modal() {
   };
 
   useEffect(() => {
-    disableScroll.on();
     document.body.style = 'overflow: hidden';
     return () => {
       document.body.style = 'overflow: auto';
-      disableScroll.off();
     };
   }, []);
 
