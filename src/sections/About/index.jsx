@@ -28,9 +28,14 @@ export default function About() {
               consequat sunt nostrud amet.
             </p>
             <section className="buttons-group">
-              <ButtonPrimary>
-                Projetos
-              </ButtonPrimary>
+              <a
+                href="#projects"
+              >
+                <ButtonPrimary>
+                  Projetos
+                </ButtonPrimary>
+              </a>
+
               <a
                 href="https://br.linkedin.com/in/michaelcaxias"
                 target="_blank"

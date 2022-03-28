@@ -7,9 +7,14 @@ export const ButtonPrimary = styled.button`
   border: 2px solid ${(props) => props.theme.color.primary};
   cursor: pointer;
   padding: 8px 24px 8px 24px;
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   &:hover {
     box-shadow: rgba(255,141,164, 0.4) 0px 5px,
     rgba(255,141,164, 0.3) 0px 10px,

@@ -104,6 +104,9 @@ const ModalStyle = styled.section`
       .aside-menu {
         background-color: ${(props) => props.theme.color.background};
         justify-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
         padding: 1rem;
         width: 35%;
         height: 100%;
@@ -116,6 +119,9 @@ const ModalStyle = styled.section`
           gap: 0.5rem;
           overflow-y: auto;
           max-height: 60px;
+        }
+        .github-icon {
+          font-size: 1.3rem;
         }
       }
     }
