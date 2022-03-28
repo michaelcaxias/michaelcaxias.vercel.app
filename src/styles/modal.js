@@ -90,8 +90,8 @@ const ModalStyle = styled.section`
       display: flex;
       color: ${(props) => props.theme.color.text};
       .preview-app {
-        width: 65%;
-        height: 75%;
+        max-width: 65%;
+        max-height: 75%;
       }
       .aside-menu {
         padding: 1rem;

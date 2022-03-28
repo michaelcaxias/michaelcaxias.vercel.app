@@ -43,8 +43,9 @@ const ProjectsStyle = styled.section`
     display: flex;
     flex-direction: column;
     background-color: ${(props) => props.theme.color.background};
+    box-shadow: #FF8DA4 0px 2px 1px,
+    rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: ${(props) => props.theme.color.text};
-    box-shadow: 5px 5px ${(props) => props.theme.color.primary};
     .card-heading {
       border-radius: 8px 8px 0 0;
       height: 150px;
@@ -78,6 +79,11 @@ const ProjectsStyle = styled.section`
     }
     &:hover {
       transform: scale(1.005);
+      box-shadow: #FF8DA4 0px 2px 1px,
+      rgba(255, 141, 164, 0.08) 0px 4px 2px,
+      rgba(255, 141, 164, 0.08) 0px 8px 4px,
+      rgba(255, 141, 164, 0.08) 0px 16px 8px,
+      rgba(255, 141, 164, 0.08) 0px 32px 16px;
     }
   }
   .invisible-button {

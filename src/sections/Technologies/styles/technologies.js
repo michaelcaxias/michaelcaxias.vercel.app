@@ -46,6 +46,8 @@ const TechnologiesStyle = styled.section`
     padding: 2rem 2rem;
     transition: 0.3s;
     width: 15rem;
+    box-shadow: rgba(255, 141, 164, 0.08) 0px 4px 2px,
+      rgba(255, 141, 164, 0.08) 0px 8px 4px;
     .icons-card {
       display: flex;
       gap: 1rem;
@@ -54,11 +56,11 @@ const TechnologiesStyle = styled.section`
       transition: 0.3s;
     }
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
-      rgba(0, 0, 0, 0.09) 0px 4px 2px,
-      rgba(0, 0, 0, 0.09) 0px 8px 4px,
-      rgba(0, 0, 0, 0.09) 0px 16px 8px,
-      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      box-shadow: #FF8DA4 0px 2px 1px,
+      rgba(255, 141, 164, 0.02) 0px 4px 2px,
+      rgba(255, 141, 164, 0.02) 0px 8px 4px,
+      rgba(255, 141, 164, 0.02) 0px 16px 8px,
+      rgba(255, 141, 164, 0.02) 0px 32px 16px;
     }
     &::after {
       content: '';
