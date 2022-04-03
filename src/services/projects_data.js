@@ -50,8 +50,9 @@ export default [
     image: backendDefault,
     title: 'Blogs API',
     description: `
-    Projeto com objetivo de criar um CRUD
-    a partir da criação de uma API RESTful utilizando as estruturas ORM e MSC.
+    API Restful de um Blog com NodeJs, Express, Sequelize e JWT
+    com o banco de dados MySQL
+    utilizando a estrutura ORM e MSC.
     `,
     github: 'https://github.com/michaelcaxias/blogs-api',
     repositoryPath: 'michaelcaxias/blogs-api',
@@ -65,8 +66,8 @@ export default [
     image: twelveStore,
     title: 'Twelve Store',
     description: `
-    Projeto feito em grupo com o objetivo de treinar as metodologias ágeis
-    com DM's e Kanbam, além de utilizarmos Redux para o gerenciamento de estados.
+    Front-end de uma aplicação de uma loja de produtos variados
+    com React, Redux, Semantic UI e metodologias àgeis feito em grupo.
     `,
     github: 'https://github.com/michaelcaxias/twelve-store',
     repositoryPath: 'michaelcaxias/twelve-store',
@@ -81,7 +82,7 @@ export default [
     title: 'Recipes App',
     description: `
     Front-end de um aplicativo de receitas de
-    bebidas e comidas com React, Context API e metodologias àgeis.
+    bebidas e comidas com React, Context API e metodologias àgeis feito em grupo.
     `,
     github: 'https://github.com/michaelcaxias/recipes-app',
     repositoryPath: 'michaelcaxias/recipes-app',
