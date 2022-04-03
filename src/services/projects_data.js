@@ -80,8 +80,8 @@ export default [
     image: recipesApp,
     title: 'Recipes App',
     description: `
-    Projeto feito em grupo com o objetivo de treinar
-    as metodologias ágeis com DM's e Kanbam, React e Bootstrap.
+    Front-end de um aplicativo de receitas de
+    bebidas e comidas com React, Context API e metodologias àgeis.
     `,
     github: 'https://github.com/michaelcaxias/recipes-app',
     repositoryPath: 'michaelcaxias/recipes-app',

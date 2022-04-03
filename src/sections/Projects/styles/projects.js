@@ -55,7 +55,7 @@ const ProjectsStyle = styled.section`
       h2 {
         padding: 0.5rem 0.7rem;
         color: black;
-        text-shadow: 1px 1px 1px ${(props) => props.theme.color.primary};
+        text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
       }
     }
     .card-description {
