@@ -94,6 +94,18 @@ const ProjectsStyle = styled.section`
     color: inherit;
     font-size: 1rem;
   }
+  .see-more-projects {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: ${(props) => props.theme.color.text};
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: ${(props) => props.theme.color.primary};
+      text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
+    }
+  }
   @media (max-width: 990px) {
     .projects-cards {
       grid-template-columns: 1fr;
