@@ -21,11 +21,11 @@ export default function About() {
               Desenvolvedor Web
             </h1>
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              Sou apaixonado por tecnologia e automação de trabalhos manuais.
               <br />
-              sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+              Diante disso, trabalho e invisto para que tecnologia cause
               <br />
-              consequat sunt nostrud amet.
+              um impacto de forma positiva na vida das pessoas :).
             </p>
             <section className="buttons-group">
               <a

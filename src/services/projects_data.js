@@ -1,7 +1,7 @@
 import backendDefault from '../images/backend.jpg';
 import trybeSchedule from '../images/trybe-schedule.png';
 import twelveStore from '../images/twelveStore.png';
-import recipesApp from '../images/recipes-app.png';
+import recipesApp from '../images/recipes-app.jpg';
 
 const REACT = 'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB';
 const JAVASCRIPT = 'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=323330';
