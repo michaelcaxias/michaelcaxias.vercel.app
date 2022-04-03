@@ -35,8 +35,9 @@ export default [
     image: trybeSchedule,
     title: 'Trybe Schedule',
     description: `
-    Projeto criado com o intuito de ajudar os estudantes da Trybe
-    a sincronizarem as suas aulas com o Google Calendar.
+    Aplicação de Calendário criado com o intuito de ajudar os estudantes da Trybe
+    a sincronizarem as suas aulas com o Google Calendar
+    feito com React, Material UI e Cypress.
     `,
     github: 'https://github.com/michaelcaxias/trybe-schedule',
     repositoryPath: 'michaelcaxias/trybe-schedule',
