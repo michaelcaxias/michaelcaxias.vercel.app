@@ -42,12 +42,14 @@ export default function Card(props) {
                 <AiFillGithub />
               </ButtonSecondary>
             </a>
-            <a href={ website } target="_blank" rel="noopener noreferrer">
-              <ButtonPrimary>
-                Website
-                <CgWebsite />
-              </ButtonPrimary>
-            </a>
+            { website && (
+              <a href={ website } target="_blank" rel="noopener noreferrer">
+                <ButtonPrimary>
+                  Website
+                  <CgWebsite />
+                </ButtonPrimary>
+              </a>
+            )}
           </section>
         </section>
       </button>

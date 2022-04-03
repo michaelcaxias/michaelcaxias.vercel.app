@@ -55,7 +55,7 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/blogs-api',
     repositoryPath: 'michaelcaxias/blogs-api',
-    website: 'https://github.com/michaelcaxias/blogs-api',
+    website: false,
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,
       stacks: [MYSQL, NODE, SEQUELIZE, JWT],
@@ -85,7 +85,7 @@ export default [
     `,
     github: 'https://github.com/michaelcaxias/recipes-app',
     repositoryPath: 'michaelcaxias/recipes-app',
-    website: 'https://github.com/michaelcaxias/recipes-app',
+    website: 'https://recipes-app-drink.vercel.app/',
     modalInfo: {
       deepDescription: GENERAL_DESCRIPTION,
       stacks: [REACT, JAVASCRIPT, CSS3, BOOTSTRAP, TESTING_LIBRARY],
