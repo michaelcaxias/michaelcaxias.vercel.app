@@ -94,6 +94,8 @@ const ModalStyle = styled.section`
       position: relative;
       .left-content {
         background-color: ${(props) => props.theme.color.secondaryAlternative};
+        display: flex;
+        align-items: center;
         height: 100%;
         width: 100%;
         .preview-app {
@@ -126,6 +128,23 @@ const ModalStyle = styled.section`
       }
     }
   }
+  @media (max-width: 990px) {
+    .modal {
+      .modal-content {
+        flex-direction: column;
+        .left-content {
+          .preview-app {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .aside-menu {
+          position: static;
+          width: auto;
+        }
+      }
+    }
+    }
 `;
 
 export default ModalStyle;
