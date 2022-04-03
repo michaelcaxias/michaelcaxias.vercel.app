@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { FiDownload } from 'react-icons/fi';
+import personalPicture from '../../images/personal-picture.png';
 
 import AboutStyle from './styles/about';
 import Header from './components/Header';
@@ -57,7 +58,9 @@ export default function About() {
               </a>
             </section>
           </section>
-          <section className="circle-picture" />
+          <section className="circle-picture">
+            <img src={ personalPicture } alt="michael de cabelo cacheado sorrindo" />
+          </section>
         </section>
       </section>
     </AboutStyle>
