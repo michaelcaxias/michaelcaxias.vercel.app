@@ -45,10 +45,16 @@ export default function About() {
                   LinkedIn
                 </ButtonSecondary>
               </a>
-              <ButtonSecondary className="curriculum-button">
-                CV
-                <FiDownload />
-              </ButtonSecondary>
+              <a
+                href="curriculo.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ButtonSecondary className="curriculum-button">
+                  CV
+                  <FiDownload />
+                </ButtonSecondary>
+              </a>
             </section>
           </section>
           <section className="circle-picture" />
