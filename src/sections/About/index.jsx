@@ -59,7 +59,11 @@ export default function About() {
             </section>
           </section>
           <section className="circle-picture">
-            <img src={ personalPicture } alt="michael de cabelo cacheado sorrindo" />
+            <img
+              src={ personalPicture }
+              alt="michael de cabelo cacheado sorrindo"
+              draggable={ false }
+            />
           </section>
         </section>
       </section>
