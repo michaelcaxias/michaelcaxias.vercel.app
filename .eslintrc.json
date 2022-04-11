@@ -11,7 +11,10 @@
       },
       "sourceType": "module"
     },
-    "plugins": ["react", "sonarjs"]
+    "plugins": ["react", "sonarjs"],
+    "rules": {
+      "react/jsx-max-depth": "off"
+    }
 }
   
   

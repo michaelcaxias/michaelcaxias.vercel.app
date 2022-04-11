@@ -39,11 +39,13 @@ const ProjectsStyle = styled.section`
     border-radius: 8px;
     width: 65vh;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     background-color: ${(props) => props.theme.color.background};
+    box-shadow: #FF8DA4 0px 2px 1px,
+    rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: ${(props) => props.theme.color.text};
-    box-shadow: 5px 5px ${(props) => props.theme.color.primary};
     .card-heading {
       border-radius: 8px 8px 0 0;
       height: 150px;
@@ -53,7 +55,7 @@ const ProjectsStyle = styled.section`
       h2 {
         padding: 0.5rem 0.7rem;
         color: black;
-        text-shadow: 1px 1px 1px ${(props) => props.theme.color.primary};
+        text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
       }
     }
     .card-description {
@@ -77,6 +79,31 @@ const ProjectsStyle = styled.section`
     }
     &:hover {
       transform: scale(1.005);
+      box-shadow: #FF8DA4 0px 2px 1px,
+      rgba(255, 141, 164, 0.08) 0px 4px 2px,
+      rgba(255, 141, 164, 0.08) 0px 8px 4px,
+      rgba(255, 141, 164, 0.08) 0px 16px 8px,
+      rgba(255, 141, 164, 0.08) 0px 32px 16px;
+    }
+  }
+  .invisible-button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
+  }
+  .see-more-projects {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: ${(props) => props.theme.color.text};
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: ${(props) => props.theme.color.primary};
+      text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
     }
   }
   @media (max-width: 990px) {

@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { FiDownload } from 'react-icons/fi';
+import personalPicture from '../../images/personal-picture.png';
 
 import AboutStyle from './styles/about';
 import Header from './components/Header';
@@ -21,16 +22,21 @@ export default function About() {
               Desenvolvedor Web
             </h1>
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              Sou apaixonado por tecnologia e automação de trabalhos manuais.
               <br />
-              sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+              Diante disso, trabalho e invisto para que tecnologia cause
               <br />
-              consequat sunt nostrud amet.
+              um impacto de forma positiva na vida das pessoas :).
             </p>
             <section className="buttons-group">
-              <ButtonPrimary>
-                Projetos
-              </ButtonPrimary>
+              <a
+                href="#projects"
+              >
+                <ButtonPrimary>
+                  Projetos
+                </ButtonPrimary>
+              </a>
+
               <a
                 href="https://br.linkedin.com/in/michaelcaxias"
                 target="_blank"
@@ -40,13 +46,25 @@ export default function About() {
                   LinkedIn
                 </ButtonSecondary>
               </a>
-              <ButtonSecondary className="curriculum-button">
-                CV
-                <FiDownload />
-              </ButtonSecondary>
+              <a
+                href="curriculo.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ButtonSecondary className="curriculum-button">
+                  CV
+                  <FiDownload />
+                </ButtonSecondary>
+              </a>
             </section>
           </section>
-          <section className="circle-picture" />
+          <section className="circle-picture">
+            <img
+              src={ personalPicture }
+              alt="michael de cabelo cacheado sorrindo"
+              draggable={ false }
+            />
+          </section>
         </section>
       </section>
     </AboutStyle>

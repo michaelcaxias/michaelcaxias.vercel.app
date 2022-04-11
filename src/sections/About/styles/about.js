@@ -100,6 +100,16 @@ const AboutStyle = styled.section`
     height: 360px;
     border-radius: 50%;
     box-shadow: 20px -30px 0 #EAFAFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      position: absolute;
+      height: 360px;
+      filter: saturate(0);
+    }
   }
   @media (max-width: 990px) {
     header {
@@ -202,6 +212,9 @@ const AboutStyle = styled.section`
     .circle-picture {
       width: 300px;
       height: 300px;
+      img {
+        height: 300px;
+      }
     }
   }
 `;

@@ -7,9 +7,14 @@ export const ButtonPrimary = styled.button`
   border: 2px solid ${(props) => props.theme.color.primary};
   cursor: pointer;
   padding: 8px 24px 8px 24px;
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   &:hover {
     box-shadow: rgba(255,141,164, 0.4) 0px 5px,
     rgba(255,141,164, 0.3) 0px 10px,
@@ -56,7 +61,7 @@ export const MenuStyle = styled.ul`
   opacity: 1;
   transition: opacity 0.5s linear;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  z-index: 100;
+  z-index: 1400;
   button {
     align-items: center;
     background-color: transparent;

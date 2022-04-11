@@ -5,6 +5,18 @@ export const MyContext = createContext();
 
 export function MyProvider({ children }) {
   const [darkMode, setDarkMode] = useState(true);
+  const [modalData, setModalData] = useState({
+    title: 'Titulo do Projeto',
+  });
+  const [isOpen, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     const setOrCreateThemeStorage = () => {
@@ -18,6 +30,12 @@ export function MyProvider({ children }) {
   const context = {
     darkMode,
     setDarkMode,
+    isOpen,
+    setOpen,
+    handleOpen,
+    handleClose,
+    modalData,
+    setModalData,
   };
 
   return (
