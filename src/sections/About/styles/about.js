@@ -21,6 +21,7 @@ const AboutStyle = styled.section`
       gap: 1.5rem;
       font-size: 1.3rem;
       font-weight: 500;
+      z-index: 10;
       a {
         color: ${(props) => props.theme.color.text};
         transition: all 0.2s ease-in-out;
