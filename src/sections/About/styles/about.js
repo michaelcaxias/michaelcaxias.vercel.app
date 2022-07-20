@@ -12,6 +12,7 @@ const AboutStyle = styled.section`
       justify-content: center;
       align-items: center;
       margin-right: 1rem;
+      z-index: 2;
     }
     .nav-menu {
       align-items: center;
@@ -21,7 +22,7 @@ const AboutStyle = styled.section`
       gap: 1.5rem;
       font-size: 1.3rem;
       font-weight: 500;
-      z-index: 10;
+      z-index: 2;
       a {
         color: ${(props) => props.theme.color.text};
         transition: all 0.2s ease-in-out;
