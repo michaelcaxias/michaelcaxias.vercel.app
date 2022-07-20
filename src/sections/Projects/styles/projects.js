@@ -79,6 +79,10 @@ const ProjectsStyle = styled.section`
         width: 100%;
         z-index: 1;
         color: white;
+
+        h3 {
+          padding: 0 1rem;
+        }
       }
 
       .overlay {

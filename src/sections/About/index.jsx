@@ -2,7 +2,6 @@
 import React from 'react';
 
 import { FiDownload } from 'react-icons/fi';
-import personalPicture from '../../images/personal-picture.png';
 
 import AboutStyle from './styles/about';
 import Header from './components/Header';
@@ -60,7 +59,7 @@ export default function About() {
           </section>
           <section className="circle-picture">
             <img
-              src={ personalPicture }
+              src="assets/img/personal-picture.png"
               alt="michael de cabelo cacheado sorrindo"
               draggable={ false }
             />
