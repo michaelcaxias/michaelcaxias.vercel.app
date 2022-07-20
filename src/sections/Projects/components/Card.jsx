@@ -1,15 +1,21 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Card() {
+export default function Card({ description, image }) {
   return (
     <section className="project-card" data-aos="zoom-in">
       <figure>
-        <img src="assets/img/compliance-station-saas.png" alt="compliance station saas" />
+        <img src={ image } alt="compliance station saas" />
         <figcaption>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <h3>{description}</h3>
         </figcaption>
         <div className="overlay" />
       </figure>
     </section>
   );
 }
+
+Card.propTypes = {
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
