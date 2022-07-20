@@ -156,7 +156,9 @@ const ProjectsStyle = styled.section`
   }
 
   @media (max-width: 990px) {
+
     h1 {
+
       &:after {
         width: 0;
       }
@@ -164,6 +166,20 @@ const ProjectsStyle = styled.section`
       &:before {
         width: 0;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .project-card {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .project-card {
+      width: 100%;
     }
   }
 `;
