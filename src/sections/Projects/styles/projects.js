@@ -79,9 +79,31 @@ const ProjectsStyle = styled.section`
         width: 100%;
         z-index: 1;
         color: white;
+        gap: 2rem;
 
         h3 {
           padding: 0 1rem;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          gap: 0.3rem;
+          cursor: pointer;
+          border: 2px solid ${(props) => props.theme.color.primary};
+          border-radius: 1rem;
+          width: 40%;
+          padding: 0.5rem;
+          background: none;
+          color: white;
+          align-self: center;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background: ${(props) => props.theme.color.primary};
+          }
         }
       }
 
