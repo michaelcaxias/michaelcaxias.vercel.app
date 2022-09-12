@@ -11,6 +11,7 @@ export default createGlobalStyle`
   body, html {
     font-family: 'Heebo', 'sans-serif';
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   ::-webkit-scrollbar {
