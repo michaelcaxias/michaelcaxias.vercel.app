@@ -59,7 +59,7 @@ export default function About() {
           </section>
           <section className="circle-picture">
             <img
-              src="assets/img/personal-picture.png"
+              src="https://i.imgur.com/AvYei5s.png"
               alt="michael de cabelo cacheado sorrindo"
               draggable={ false }
             />
