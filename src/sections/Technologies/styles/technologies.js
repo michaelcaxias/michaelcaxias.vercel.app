@@ -52,11 +52,11 @@ const TechnologiesStyle = styled.section`
       display: flex;
       gap: 1rem;
       font-size: 5rem;
-      color: #FF8DA4;
+      color: ${(props) => props.theme.color.primary};;
       transition: 0.3s;
     }
     &:hover {
-      box-shadow: #FF8DA4 0px 2px 1px,
+      box-shadow: ${(props) => props.theme.color.primary}; 0px 2px 1px,
       rgba(255, 141, 164, 0.02) 0px 4px 2px,
       rgba(255, 141, 164, 0.02) 0px 8px 4px,
       rgba(255, 141, 164, 0.02) 0px 16px 8px,

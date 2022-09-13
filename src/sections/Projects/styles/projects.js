@@ -52,6 +52,7 @@ const ProjectsStyle = styled.section`
       border-radius: 1rem;
       text-align: center;
       padding-top: 66.666%;
+      border: 2.5px solid ${(props) => props.theme.color.primary};
 
       img {
         bottom: 0;
@@ -85,7 +86,7 @@ const ProjectsStyle = styled.section`
           padding: 0 1rem;
         }
 
-        button {
+        a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -156,9 +157,7 @@ const ProjectsStyle = styled.section`
   }
 
   @media (max-width: 990px) {
-
     h1 {
-
       &:after {
         width: 0;
       }
@@ -170,14 +169,12 @@ const ProjectsStyle = styled.section`
   }
 
   @media (max-width: 768px) {
-
     .project-card {
       width: 50%;
     }
   }
 
   @media (max-width: 576px) {
-
     .project-card {
       width: 100%;
     }
