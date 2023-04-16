@@ -14,6 +14,7 @@ export default function Home() {
   const { darkMode } = useContext(MyContext);
   return (
     <ThemeProvider theme={darkMode ? dark : light}>
+      <title>Michael Caxias</title>
       <Menu />
       <GlobalStyle />
       <About />
