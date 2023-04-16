@@ -6,10 +6,6 @@ export const MyContext = createContext({} as MyProviderContext);
 
 export function MyProvider({ children }: PropsWithChildren) {
   const [darkMode, setDarkMode] = useState(true);
-  const [modalData, setModalData] = useState({
-    title: 'Titulo do Projeto',
-  });
-  const [isOpen, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -31,12 +27,8 @@ export function MyProvider({ children }: PropsWithChildren) {
   const context = {
     darkMode,
     setDarkMode,
-    isOpen,
-    setOpen,
     handleOpen,
     handleClose,
-    modalData,
-    setModalData,
   };
 
   return <MyContext.Provider value={context}>{children}</MyContext.Provider>;
