@@ -12,7 +12,7 @@ export default [
     website: 'https://compliancestation.com.br/',
   },
   {
-    image: 'assets/img/compliance-station-saas.png',
+    image: 'https://i.imgur.com/NTNV3LD.png',
     title: 'Compliance Station - SAAS',
     description: `
       Projeto SAAS e Rede de Integridade para empresa Compliance Station.
@@ -21,7 +21,7 @@ export default [
     website: 'https://compliancestation.com.br/',
   },
   {
-    image: 'assets/img/compliance-station-saas.png',
+    image: 'https://i.imgur.com/NTNV3LD.png',
     title: 'Compliance Station - SAAS',
     description: `
       Projeto SAAS e Rede de Integridade para empresa Compliance Station.
@@ -30,7 +30,7 @@ export default [
     website: 'https://compliancestation.com.br/',
   },
   {
-    image: 'assets/img/compliance-station-saas.png',
+    image: 'https://i.imgur.com/NTNV3LD.png',
     title: 'Compliance Station - SAAS',
     description: `
       Projeto SAAS e Rede de Integridade para empresa Compliance Station.
@@ -39,7 +39,7 @@ export default [
     website: 'https://compliancestation.com.br/',
   },
   {
-    image: 'assets/img/compliance-station-saas.png',
+    image: 'https://i.imgur.com/NTNV3LD.png',
     title: 'Compliance Station - SAAS',
     description: `
       Projeto SAAS e Rede de Integridade para empresa Compliance Station.
@@ -48,7 +48,7 @@ export default [
     website: 'https://compliancestation.com.br/',
   },
   {
-    image: 'assets/img/compliance-station-saas.png',
+    image: 'https://i.imgur.com/NTNV3LD.png',
     title: 'Compliance Station - SAAS',
     description: `
       Projeto SAAS e Rede de Integridade para empresa Compliance Station.

@@ -2,14 +2,14 @@ import React from 'react';
 import { BsArrowRightSquare } from 'react-icons/bs';
 import ProjectsStyle from './styles';
 import Card from './components/Card';
-import projectsData from '@/services/projects_data';
+import projects_data from '@/services/projects_data';
 
 export default function Projects() {
   return (
     <ProjectsStyle id="projects">
       <h1 data-aos="fade-up">Projetos</h1>
       <section className="projects-cards">
-        {projectsData.map((project) => (
+        {projects_data.map((project) => (
           <Card {...project} key={project.title} />
         ))}
       </section>
