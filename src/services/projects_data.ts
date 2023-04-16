@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 export default [
   {
     image: 'https://i.imgur.com/NTNV3LD.png',
