@@ -88,7 +88,7 @@ const TechnologiesStyle = styled.section`
         width: 0;
       }
     }
-  } 
+  }
 `;
 
 export default TechnologiesStyle;

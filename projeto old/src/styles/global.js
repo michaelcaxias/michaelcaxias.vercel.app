@@ -7,7 +7,7 @@ export default createGlobalStyle`
     text-decoration: none;
     margin: 0;
   }
-  
+
   body, html {
     font-family: 'Heebo', 'sans-serif';
     scroll-behavior: smooth;
@@ -19,11 +19,11 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.color.background}; 
+    background: ${(props) => props.theme.color.background};
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.color.primary}; 
+    background: ${(props) => props.theme.color.primary};
     border-radius: 10px;
   }
   ul {
