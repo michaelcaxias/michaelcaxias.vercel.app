@@ -1,5 +1,12 @@
 import React from 'react';
-import MenuItemProps from './interfaces';
+
+interface MenuItemProps {
+  text: string;
+  icon: React.ReactNode;
+  link?: string;
+  onClick?: () => void;
+}
+
 
 export default function MenuItem({ text, icon, link, onClick }: MenuItemProps) {
   const item = (

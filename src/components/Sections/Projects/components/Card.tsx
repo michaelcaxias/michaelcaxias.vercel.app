@@ -1,6 +1,12 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
-import CardProps from './card.interfaces';
+
+interface CardProps {
+  description: string;
+  image: string;
+  website: string;
+}
+
 
 export default function Card({ description, image, website }: CardProps) {
   return (
