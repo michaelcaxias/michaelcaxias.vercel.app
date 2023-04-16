@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
 
+//DONE
+
 import { FiDownload } from 'react-icons/fi';
 
 import AboutStyle from './styles/about';

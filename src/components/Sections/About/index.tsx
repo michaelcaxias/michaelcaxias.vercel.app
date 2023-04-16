@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-max-depth */
 import React from 'react';
 
 import { FiDownload } from 'react-icons/fi';
