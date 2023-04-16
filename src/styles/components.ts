@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-// DONE
 import styled from 'styled-components';
 
 export const ButtonPrimary = styled.button`
