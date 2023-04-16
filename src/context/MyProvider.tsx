@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import MyProviderContext from './MyProvider.interfaces';
+import MyProviderContext from './interfaces';
 
 export const MyContext = createContext({} as MyProviderContext);
 

@@ -1,6 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+// DONE
+
 export const MyContext = createContext();
 
 export function MyProvider({ children }) {

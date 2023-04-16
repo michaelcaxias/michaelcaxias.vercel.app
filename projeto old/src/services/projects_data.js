@@ -1,3 +1,5 @@
+// DONE
+
 export default [
   {
     image: 'https://i.imgur.com/NTNV3LD.png',

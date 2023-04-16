@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+// DONE
+
 export default function MenuItem({ text, icon, link, onClick }) {
   const item = (
     <li>

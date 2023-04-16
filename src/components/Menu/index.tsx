@@ -26,7 +26,7 @@ export default function Menu() {
   };
 
   return (
-    show && (
+    show ? (
       <MenuStyle style={{ top: anchorPoint.y, left: anchorPoint.x }}>
         <MenuItem
           text="Compartilhar"
@@ -46,6 +46,6 @@ export default function Menu() {
           link="https://br.linkedin.com/in/michaelcaxias"
         />
       </MenuStyle>
-    )
+    ) : <></>
   );
 };
