@@ -14,6 +14,7 @@ export default function Header() {
 
   const toggleMenu = () => {
     toggleOpen(!isOpen);
+    document.body.style = 'overflow: hidden';
   };
 
   return (

@@ -70,16 +70,16 @@ const FooterStyle = styled.footer`
     align-items: center;
     padding: 4rem 1rem;
     background-color: ${(props) => props.theme.color.primary};
-    color: #21243D;
+    color: #21243d;
     nav {
       display: flex;
       gap: 1.5rem;
       a {
         font-size: 2.75em;
-        color: #21243D;
+        color: #21243d;
         transition: 0.5s;
         &:hover {
-          color: #EAFAFF;
+          color: ${(props) => props.theme.color.secondaryAlternative};
         }
       }
     }

@@ -8,20 +8,23 @@ const ProjectsStyle = styled.section`
   padding: 5rem;
   gap: 4rem;
   background-color: ${(props) => props.theme.color.secondaryAlternative};
+
   h1 {
     font-size: 2rem;
     color: ${(props) => props.theme.color.text};
     display: flex;
     align-items: center;
     gap: 2rem;
-    &::after {
+
+    &:after {
       content: '';
       display: block;
       width: 50vh;
       height: 3px;
       background-color: ${(props) => props.theme.color.primary};
     }
-    &::before {
+
+    &:before {
       content: '';
       display: block;
       width: 50vh;
@@ -29,63 +32,107 @@ const ProjectsStyle = styled.section`
       background-color: ${(props) => props.theme.color.primary};
     }
   }
+
   .projects-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-  .card {
-    background-color: white;
-    border-radius: 8px;
-    width: 65vh;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    background-color: ${(props) => props.theme.color.background};
-    box-shadow: #FF8DA4 0px 2px 1px,
-    rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    color: ${(props) => props.theme.color.text};
-    .card-heading {
-      border-radius: 8px 8px 0 0;
-      height: 150px;
-      background-size: cover;
-      display: flex;
-      align-items: flex-end;
-      h2 {
-        padding: 0.5rem 0.7rem;
-        color: black;
-        text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .project-card {
+    flex: none;
+    width: 33.333%;
+    display: block;
+    padding: 0.75rem;
+
+    figure {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      text-align: center;
+      padding-top: 66.666%;
+      border: 2.5px solid ${(props) => props.theme.color.primary};
+
+      img {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(1);
+        transition: 0.25s ease-in-out;
+        width: 100%;
+        max-width: 100%;
       }
-    }
-    .card-description {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      height: 10rem;
-      gap: 1rem;
-      padding: 1.5rem;
-      .buttons-group {
+
+      figcaption {
         display: flex;
-        gap: 0.9rem;
-        align-items: center;
-        button {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.45s ease-in-out;
+        width: 100%;
+        z-index: 1;
+        color: white;
+        gap: 2rem;
+
+        h3 {
+          padding: 0 1rem;
+        }
+
+        a {
           display: flex;
-          gap: 0.5rem;
           align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          gap: 0.3rem;
+          cursor: pointer;
+          border: 2px solid ${(props) => props.theme.color.primary};
+          border-radius: 1rem;
+          width: 40%;
+          padding: 0.5rem;
+          background: none;
+          color: white;
+          align-self: center;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background: ${(props) => props.theme.color.primary};
+          }
+        }
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.45s ease-in-out;
+        width: 100%;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        figcaption,
+        .overlay {
+          opacity: 1;
         }
       }
     }
-    &:hover {
-      transform: scale(1.005);
-      box-shadow: #FF8DA4 0px 2px 1px,
-      rgba(255, 141, 164, 0.08) 0px 4px 2px,
-      rgba(255, 141, 164, 0.08) 0px 8px 4px,
-      rgba(255, 141, 164, 0.08) 0px 16px 8px,
-      rgba(255, 141, 164, 0.08) 0px 32px 16px;
-    }
   }
+
   .invisible-button {
     background-color: transparent;
     padding: 0;
@@ -94,6 +141,7 @@ const ProjectsStyle = styled.section`
     color: inherit;
     font-size: 1rem;
   }
+
   .see-more-projects {
     display: flex;
     align-items: center;
@@ -101,25 +149,34 @@ const ProjectsStyle = styled.section`
     color: ${(props) => props.theme.color.text};
     gap: 0.5rem;
     transition: all 0.2s ease-in-out;
+
     &:hover {
       color: ${(props) => props.theme.color.primary};
       text-shadow: 2px 1px 5px ${(props) => props.theme.color.primary};
     }
   }
+
   @media (max-width: 990px) {
-    .projects-cards {
-      grid-template-columns: 1fr;
-    }
-    .card {
-      width: 100%;
-    }
     h1 {
-      &::after {
+      &:after {
         width: 0;
       }
-      &::before {
+
+      &:before {
         width: 0;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-card {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .project-card {
+      width: 100%;
     }
   }
 `;
