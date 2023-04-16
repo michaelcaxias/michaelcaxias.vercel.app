@@ -1,3 +1,4 @@
+/* eslint-disable react/no-multi-comp */
 import React from 'react';
 import { BsArrowRightSquare } from 'react-icons/bs';
 import ProjectsStyle from './styles/projects';
@@ -9,18 +10,10 @@ export default function Projects() {
     <ProjectsStyle id="projects">
       <h1 data-aos="fade-up">Projetos</h1>
       <section className="projects-cards">
-        {projectsData && projectsData
-          .map(({ image, title, description, github, website, modalInfo }) => (
-            <Card
-              key={ title }
-              image={ image }
-              title={ title }
-              description={ description }
-              github={ github }
-              website={ website }
-              modalInfo={ modalInfo }
-            />
-          ))}
+        {projectsData.map((project) => (
+          <Card { ...project } key={ project.title } />
+        ))}
+
       </section>
       <a
         href="https://github.com/michaelcaxias?tab=repositories"
