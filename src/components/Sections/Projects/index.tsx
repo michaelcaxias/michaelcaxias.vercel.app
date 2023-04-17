@@ -9,8 +9,8 @@ export default function Projects() {
     <ProjectsStyle id="projects">
       <h1 data-aos="fade-up">Projetos</h1>
       <section className="projects-cards">
-        {projects_data.map((project) => (
-          <Card {...project} key={project.title} />
+        {projects_data.map((project, i) => (
+          <Card {...project} key={i} />
         ))}
       </section>
       <a
