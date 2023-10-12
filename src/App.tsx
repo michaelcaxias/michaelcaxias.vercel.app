@@ -1,7 +1,12 @@
 import 'normalize.css';
+import Test from '@components/test';
 
 function App() {
-  return <div onClick={() => console.log('a')}>app</div>;
+  return (
+    <div>
+      <Test />
+    </div>
+  )
 }
 
 export default App;
