@@ -1,8 +1,8 @@
-import ErrorStrategyPage from "./ErrorPageHandler";
+import view from './view';
 import InternalErrorPage from './InternalErrorPage';
 import NotFoundPage from './NotFoundPage';
 
-export default ErrorStrategyPage
+export default view;
 
 export {
   InternalErrorPage,
