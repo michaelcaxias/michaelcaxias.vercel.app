@@ -44,12 +44,12 @@ const Menu = () => {
       <MenuItem
         text="Abrir Linkedin"
         icon={ <AiFillLinkedin /> }
-        link="https://github.com/michaelcaxias"
+        link="https://br.linkedin.com/in/michaelcaxias"
       />
       <MenuItem
         text="Abrir GitHub"
         icon={ <AiFillGithub /> }
-        link="https://br.linkedin.com/in/michaelcaxias"
+        link="https://github.com/michaelcaxias"
       />
     </MenuStyle>
   );
