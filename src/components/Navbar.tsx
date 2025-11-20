@@ -17,6 +17,7 @@ export const Navbar = () => {
                 <Link href="/#experience" className="hover:text-primary transition-colors">Experience</Link>
                 <Link href="/#projects" className="hover:text-primary transition-colors">Projects</Link>
                 <Link href="/uses" className="hover:text-primary transition-colors">Uses</Link>
+                <Link href="/now" className="hover:text-primary transition-colors">Now</Link>
                 <Link href="/#contact" className="hover:text-primary transition-colors">Contact</Link>
             </div>
 
