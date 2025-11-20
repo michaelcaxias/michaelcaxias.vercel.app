@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/blog",
-        "destination": "https://www.google.com"
-      }
-    ]
-  }
