@@ -1,65 +1,19 @@
-"use client";
-
 import { GridBackground } from "@/components/GridBackground";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ElevatorButton } from "@/components/ElevatorButton";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { Headphones, Gamepad2, ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import { getRecentlyPlayedGames } from "@/lib/steam";
+import { getListeningData } from "@/lib/lastfm";
+import * as motion from "framer-motion/client";
 
-interface Game {
-    id: number;
-    name: string;
-    playtime_2weeks: number;
-    cover_url: string;
-    store_url: string;
-}
+export const revalidate = 60; // Revalidate page every 60 seconds
 
-interface Track {
-    artist: string;
-    track: string;
-    cover_url: string;
-    now_playing: boolean;
-    url: string;
-    played?: string;
-}
-
-interface Artist {
-    name: string;
-    playcount: string;
-    url: string;
-    image: string;
-}
-
-export default function Now() {
-    const [games, setGames] = useState<Game[]>([]);
-    const [listening, setListening] = useState<{ recent: Track[]; topArtists: Artist[] } | null>(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const [gamesRes, listeningRes] = await Promise.all([
-                    fetch("/api/now/playing"),
-                    fetch("/api/now/listening")
-                ]);
-
-                const gamesData = await gamesRes.json();
-                const listeningData = await listeningRes.json();
-
-                setGames(Array.isArray(gamesData) ? gamesData : []);
-                setListening(listeningData);
-            } catch (error) {
-                console.error("Failed to fetch data", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, []);
+export default async function Now() {
+    const [games, listening] = await Promise.all([
+        getRecentlyPlayedGames(),
+        getListeningData()
+    ]);
 
     return (
         <main className="min-h-screen relative">
@@ -98,12 +52,10 @@ export default function Now() {
                                 <div>
                                     <h3 className="text-2xl font-bold mb-6">Last played tracks</h3>
                                     <div className="space-y-6">
-                                        {loading ? (
-                                            <div className="text-gray-500">Loading tracks...</div>
-                                        ) : listening?.recent.map((track, i) => (
+                                        {listening?.recent.map((track: any, i: number) => (
                                             <a key={i} href={track.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                                                 <div className="w-14 h-14 relative rounded-md overflow-hidden shrink-0">
-                                                    <img src={track.cover_url} alt={track.track} className="w-full h-full object-cover" />
+                                                    {track.cover_url && <img src={track.cover_url} alt={track.track} className="w-full h-full object-cover" />}
                                                     {track.now_playing && (
                                                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                                                             <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
@@ -134,9 +86,7 @@ export default function Now() {
                                         <h3 className="text-2xl font-bold">Monthly artists</h3>
                                     </div>
                                     <div className="grid grid-cols-3 gap-4">
-                                        {loading ? (
-                                            <div className="col-span-3 text-gray-500">Loading artists...</div>
-                                        ) : listening?.topArtists.map((artist, i) => (
+                                        {listening?.topArtists.map((artist: any, i: number) => (
                                             <a key={i} href={artist.url} target="_blank" rel="noopener noreferrer" className="aspect-square relative group rounded-lg bg-zinc-900 block hover:z-50 hover:scale-110 transition-all duration-300 ease-out hover:shadow-2xl">
                                                 <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-lg grayscale group-hover:grayscale-0 transition-all duration-300" />
 
@@ -180,9 +130,7 @@ export default function Now() {
 
                             <div className="ml-0 md:ml-12">
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    {loading ? (
-                                        <div className="col-span-4 text-gray-500">Loading games...</div>
-                                    ) : games.map((game) => (
+                                    {games.map((game: any) => (
                                         <a key={game.id} href={game.store_url} target="_blank" rel="noopener noreferrer" className="aspect-[2/3] relative rounded-xl overflow-hidden group bg-zinc-900">
                                             <img src={game.cover_url} alt={game.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center">
